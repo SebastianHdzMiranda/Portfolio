@@ -1,0 +1,74 @@
+@use '../bases/variables' as v; 
+@use '../bases/mixins' as m;
+
+.hero {
+    background-image: url(../assets/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 15rem;
+    padding: 15rem 0 10rem 0;
+    @include m.tablet {
+        height: unset;
+    }
+    @include m.desktop {
+        height: 100vh;
+        padding: 20rem 0 10rem 0;
+    }
+    &__contenedor {
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+    }
+    &__contenido {
+        flex: 1.2;
+    }
+    &__heading {
+        text-transform: uppercase;
+        margin-bottom: 3rem;
+    }
+    &__heading-span {
+        color: v.$colorPrimary;
+    }
+    &__descripcion {
+        margin-bottom: 8rem;
+        line-height: 1.7;
+    }
+    &__boton {
+        background-color: v.$colorPrimary;
+        color: v.$negro;
+        padding: 2rem 4rem;
+        font-weight: 500;
+        font-size: 1.6rem;
+        transition: all .3s ease-out;
+
+        &:hover {
+            color: v.$blanco;
+            background-color: v.$headerColor;
+        }
+    }
+    &__banner {
+        flex: 1;
+        justify-content: end;
+        display: none;
+        position: relative;
+        max-width: 52rem;
+        padding: 4rem;
+        @include m.desktop {
+            display: flex;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            background-image: url(../assets/marco-banner.png);
+            background-size: contain;
+            width: 100%;
+            height: 100%;
+            right: 0;
+            top: 0;
+            background-position: center top;
+            background-repeat: no-repeat;
+        }
+    }
+}

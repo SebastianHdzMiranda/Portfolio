@@ -1,0 +1,74 @@
+@use '../bases/variables' as v; 
+@use '../bases/mixins' as m;
+
+.header {
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    background-color: v.$headerColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    @include m.tablet {
+        width: 90%;
+    }
+    @include m.desktop {
+        padding: unset;
+    }
+    &__logo-content {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+    &__logo {
+        width: 4.5rem;
+        height: 4.5rem;
+        background-color: v.$colorPrimary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include m.desktop {
+            width: 8rem;
+            height: 8rem;
+        }
+    }
+    &__img {
+        width: 3rem;
+        @include m.desktop {
+            width: 4rem;
+        }
+    }
+
+    &__hamburger {
+        width: 4.5rem;
+        height: 4.5rem;
+        background-color: v.$colorPrimary;
+        @include m.desktop {
+            width: 8rem;
+            height: 8rem;
+        }  
+    }
+
+}
+.navegacion {
+    display: none;
+    gap: 2.5rem;
+    &__enlace {
+        text-transform: uppercase;
+        font-weight: 600;
+        transition: color .4s ease;
+        letter-spacing: 1.3px;
+        &:hover {
+            color: v.$colorPrimary;
+        }
+    }
+    
+    @include m.desktop {
+        display: flex;
+        gap: 4rem;
+    }
+}
+
