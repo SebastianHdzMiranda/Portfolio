@@ -36,17 +36,7 @@
         line-height: 1.7;
     }
     &__boton {
-        background-color: v.$colorPrimary;
-        color: v.$negro;
-        padding: 2rem 4rem;
-        font-weight: 500;
-        font-size: 1.6rem;
-        transition: all .3s ease-out;
-
-        &:hover {
-            color: v.$blanco;
-            background-color: v.$headerColor;
-        }
+        @include m.boton;
     }
     &__banner {
         flex: 1;

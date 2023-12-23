@@ -25,19 +25,19 @@
 }
 
 
-// @mixin boton($bgColor, $colorTexto) {
-//     letter-spacing: 1.8px;
-//     margin-top: 2rem;
-//     font-size: 2.5rem;
-//     padding: .8rem 6rem;
-//     transition: all .3s ease;
-//     background-color: $bgColor;
-//     color: v.$blanco;
+@mixin boton() {
+    background-color: v.$colorPrimary;
+    color: v.$negro;
+    padding: 2rem 4rem;
+    font-weight: 500;
+    font-size: 1.6rem;
+    transition: all .3s ease-out;
 
-//     &:hover {
-//         background-color: darken($bgColor, 10%);
-//     }
-// }
+    &:hover {
+        color: v.$blanco;
+        background-color: v.$headerColor;
+    }
+}
 
 @mixin grid($columnas, $espaciado ) {
     display: grid;
