@@ -1,0 +1,113 @@
+@use '../bases/variables' as v; 
+@use '../bases/mixins' as m;
+
+.innovacion {
+    @include m.desktop {
+        @include m.grid(2, 3rem);
+    }
+    .innovacion__contenido {
+        margin-bottom: 2rem;
+        @include m.desktop {
+            margin-bottom: unset;
+        }
+    }
+    .innovacion__heading {
+        font-size: 3rem;
+        @include m.tablet {
+            font-size: 5.5rem;
+        }
+    }
+    .innovacion__heading-span {
+        font-size: 8rem;
+
+        @include m.tablet {
+            font-size: 12rem;
+        }
+    }
+    .innovacion__texto {
+        margin-block: 3rem;
+    }
+    .innovacion__estadistics {
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        @include m.tablet {
+            flex-direction: row;
+        }
+    }
+    .innovacion__estadistic {
+        flex: 1;
+        text-align: center;
+        background-color: v.$bgColor;
+        padding: 4rem;
+    }
+    .innovacion__logo {
+        width: 12rem;
+        margin-bottom: 2rem;
+    }
+    .innovacion__number {
+        font-weight: 900;
+        font-size: 4rem;
+    }
+    .innovacion__estadistic-text {
+        font-weight: 500;
+        color: v.$blanco;
+    }
+
+}
+
+.formulario {
+    background-color: v.$bgColor;
+    padding: 2rem;
+    @include m.tablet {
+        padding: 5rem;
+    }
+    .formulario__heading {
+        font-weight: 400;
+        font-size: 3rem;
+        margin: 0;
+        @include m.tablet {
+            font-size: 4.5rem;
+        }
+    }
+    .formulario__texto {
+        margin-block: 3rem;
+    }
+    .formulario__input {
+        display: block;
+        width: 100%;
+        margin-bottom: 3rem;
+        padding: 2.5rem;
+        background-color: v.$bgColor;
+        border: 1px solid v.$colorPrimary;
+        caret-color: v.$blanco;
+        &:focus {
+            outline: none;
+        }
+        &::placeholder {
+            color: v.$bodyColor;
+        }
+    }
+    .formulario__textArea {
+        display: block;
+        width: 100%;
+        resize: none;
+        padding: 2.5rem;
+        background-color: transparent;
+        border: 1px solid v.$colorPrimary;
+        height: 20rem;
+        &:focus {
+            outline: none;
+        }
+        margin-bottom: 4rem;
+        &::placeholder {
+            color: v.$bodyColor;
+        }
+    }
+    .formulario__submit {
+        @include m.boton;
+        border: none;
+    }
+}
+
