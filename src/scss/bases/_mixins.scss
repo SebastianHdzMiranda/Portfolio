@@ -44,3 +44,10 @@
     gap: $espaciado;
     grid-template-columns: repeat($columnas, 1fr);
 }
+
+@mixin espaciado() {
+    padding-top: 8rem;
+    @include tablet {
+        padding-top: 13rem;
+    }
+}   

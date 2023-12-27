@@ -2,12 +2,14 @@
 @use '../bases/mixins' as m;
 
 .about {
-    padding-bottom: 13rem;
+    padding-top: 8rem;
+    display: flex;
+    gap: 5rem;
+    flex-direction: column;
     @include m.tablet {
-        display: flex;
+        flex-direction: row;
+        padding-top: 15rem;
         align-items: center;
-        gap: 5rem;
-
     }
     .about__contenido {
         flex: 2;
@@ -15,43 +17,50 @@
     .about__heading {
         margin-bottom: 5rem;
         @include m.tablet{
-            margin-bottom: 8rem;
+            margin-bottom: 10rem;
+        }
+    }
+    .about__info {
+        position: relative;
+        @include m.desktop {
+            padding-left: 13rem;
         }
     }
     .about__texto {
         display: flex;
         max-width: 55rem;
         margin-bottom: 5rem;
+        max-width: 45rem;
         @include m.tablet {
-            margin-bottom: 10rem;
+            margin-bottom: 9rem;
         }
         &::before {
             content: '';
-            width: 30rem;
-            height: 1.2px;
-            background-color: v.$blanco;
+            position: absolute;
+            left: 0;
+            width: 10rem;
+            height: 2px;
+            background-color: v.$bodyColor;
             display: none;
-            margin-right: 2rem;
-            transform: translateY(12px);
-
+            transform: translateY(10px);
+    
             @include m.desktop {
                 display: inline-block;
             }
         }
+        
     }
     .about__enlace {
         @include m.boton;
-        @include m.desktop {
-            margin-left: 11.8rem;
-        }
+        display: inline-block;
+        padding-block: 2.5rem;
     }
     .about__grafico {
         flex: 1;
         position: relative;
         padding: 2rem 2rem 0 0;
         transition: all .2s ease;
-        margin-top: 10rem;
-        max-width: 40rem;
+        max-width: 42rem;
         &::after {
             content: '';
             position: absolute;
@@ -66,9 +75,6 @@
         &:hover {
             transform: scale(1.05) rotate(5deg);
 
-        }
-        @include m.tablet {
-            margin-top: 0;
         }
     }
 

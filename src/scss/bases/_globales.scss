@@ -19,6 +19,18 @@ body {
     overflow-x: hidden;
     color: v.$blanco;
 }
+/* Ocultar la barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 0.5em;
+    width: 0;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
 [class$="contenedor"],
 .contenedor {
     width: 90%;
