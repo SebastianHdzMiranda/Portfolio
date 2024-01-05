@@ -19,6 +19,7 @@
     position: relative;
     z-index: 10;
     overflow: hidden;
+    // border-radius: 1rem;
     &::before {
         content: '';
         position: absolute;

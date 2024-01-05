@@ -6,17 +6,28 @@
     z-index: 100;
     left: 0;
     right: 0;
+    top: 0;
     background-color: v.$headerColor;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     width: 100%;
-    // padding: 1rem;
     @include m.tablet {
-        width: 90%;
+        width: 97.5%;
+        padding: 1rem;
     }
     @include m.desktop {
+        width: 95%;
         padding: unset;
+    }
+    .header__contenido {
+        width: 95%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-block: 1rem;
+        @include m.tablet {
+            width: 100%;
+            padding: unset;
+        }
     }
     &__logo-content {
         display: flex;
@@ -24,8 +35,8 @@
         gap: 2rem;
     }
     &__logo {
-        width: 5rem;
-        height: 5rem;
+        width: 4.4rem;
+        height: 4.4rem;
         background-color: v.$colorPrimary;
         display: flex;
         justify-content: center;
@@ -36,15 +47,15 @@
         }
     }
     &__img {
-        width: 3rem;
+        width: 2.6rem;
         @include m.desktop {
             width: 5rem;
         }
     }
 
     &__hamburger {
-        width: 5rem;
-        height: 5rem;
+        width: 4.4rem;
+        height: 4.4rem;
         background-color: v.$colorPrimary;
         @include m.desktop {
             width: 8rem;

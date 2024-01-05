@@ -7,8 +7,9 @@
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    padding: 15rem 0 13rem 0;
+    padding: 11rem 0 13rem 0;
     @include m.tablet {
+        padding: 15rem 0 13rem 0;
         height: unset;
     }
     @include m.desktop {
@@ -26,6 +27,8 @@
     &__heading {
         text-transform: uppercase;
         margin-bottom: 3rem;
+        font-size: 4.5rem;
+        font-weight: 600;
     }
     &__heading-span {
         color: v.$colorPrimary;
