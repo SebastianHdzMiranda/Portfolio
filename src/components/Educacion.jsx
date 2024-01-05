@@ -1,16 +1,16 @@
 import React from 'react'
 import styled from '@emotion/styled';
 
+const DivPorcentaje = styled.div`
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: ${(props) => props.p};
+    height: .6rem;
+    background-color: #55e6a5;
+`;
 function Educacion({educacionSeccion, skills}) {
-    const DivPorcentaje = styled.div`
-        display: block;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: ${(props) => props.p};
-        height: .6rem;
-        background-color: #55e6a5;
-    `;
 
   return (
     <section className='educacion'>

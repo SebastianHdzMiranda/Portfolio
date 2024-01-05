@@ -8,7 +8,7 @@
     }
     .proyectos__grid {
         margin-top: 8rem;
-        @include m.grid(1, 4rem);
+        @include m.grid(1, 1rem);
         @include m.desktop {
             @include m.grid(2, 2rem);
             padding-inline: 8.1rem;
@@ -28,7 +28,7 @@
 
     }
     .proyecto__img {
-        min-height: 25rem;
+        // min-height: 25rem;
         object-fit: cover;
         transition: all 1s cubic-bezier(0,0,.2,1);
     }
@@ -78,6 +78,8 @@
     .proyecto__links {
         display: flex;
         gap: 1rem;
+        position: relative;
+        z-index: 10;
         i {
             font-size: 3.5rem;
         }
@@ -86,7 +88,6 @@
         position: absolute;
         bottom: 0;
         padding: 4rem;
-        // color: v.$colorPrimary;
         text-transform: uppercase;
         letter-spacing: 1.2px;
     }
