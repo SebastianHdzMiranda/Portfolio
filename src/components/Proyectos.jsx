@@ -17,15 +17,23 @@ function Proyectos({proyectos}) {
 
                     <div className="proyecto__info">
                         <div className="proyecto__contenido">
+                            <h3 className="proyecto__heading">{proyecto.titulo}</h3>
+                            <div className="proyecto__tags">
+                                <p className="proyecto__tag">JavaScript</p>
+                                <p className="proyecto__tag">React</p>
+                                <p className="proyecto__tag">Sass</p>
+                                <p className="proyecto__tag">Styled Components</p>
+                            </div>
                             <div className="proyecto__links">
                                 <a href={proyecto.linkGitHub} target="_blank" className="experiencia__vinculo">
                                     <i className="experiencia__icon ri-github-fill"></i>
+                                    
                                 </a>
                                 <a href={proyecto.linkDemo} target="_blank" className="experiencia__vinculo">
                                     <i className="experiencia__icon ri-link"></i>
+                                    
                                 </a>
                             </div>
-                            <h3 className="proyecto__heading">{proyecto.titulo}</h3>
                         </div>
                     </div>
                 </div>

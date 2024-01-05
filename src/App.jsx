@@ -33,11 +33,11 @@ function App() {
 
   const proyectos = [
     {img: cafeteria, linkGitHub: 'https://github.com/SebastianHdzMiranda/La-Cafeteria', linkDemo: 'https://sebastianhdzmiranda.github.io/La-Cafeteria/', titulo: 'La Cafeteria'},
-    {img: controlGastos, linkGitHub: 'https://github.com/SebastianHdzMiranda/Control-de-Gastos', linkDemo: 'https://control-de-gastos-lac.vercel.app/', titulo: 'Control De Gastos'},
-    {img: guitarLA, linkGitHub: 'https://github.com/SebastianHdzMiranda/GuitarLA', linkDemo: 'https://sebastianhdzmiranda.github.io/GuitarLA/', titulo: 'Guitar LA'},
-    {img: nailsSite, linkGitHub: 'https://github.com/SebastianHdzMiranda/CarolinaSpa', linkDemo: 'https://sebastianhdzmiranda.github.io/CarolinaSpa/', titulo: 'Nails Site'},
     {img: nucleus, linkGitHub: 'https://github.com/SebastianHdzMiranda/nucleus-eWallet', linkDemo: 'https://sebastianhdzmiranda.github.io/nucleus-eWallet/', titulo: 'Nucleus'},
     {img: realState, linkGitHub: 'https://github.com/SebastianHdzMiranda/RealState', linkDemo: 'https://sebastianhdzmiranda.github.io/RealState/', titulo: 'Real State'},
+    {img: guitarLA, linkGitHub: 'https://github.com/SebastianHdzMiranda/GuitarLA', linkDemo: 'https://sebastianhdzmiranda.github.io/GuitarLA/', titulo: 'Guitar LA'},
+    {img: nailsSite, linkGitHub: 'https://github.com/SebastianHdzMiranda/CarolinaSpa', linkDemo: 'https://sebastianhdzmiranda.github.io/CarolinaSpa/', titulo: 'Nails Site'},
+    {img: controlGastos, linkGitHub: 'https://github.com/SebastianHdzMiranda/Control-de-Gastos', linkDemo: 'https://control-de-gastos-lac.vercel.app/', titulo: 'Control De Gastos'},
   ];
 
   return (
