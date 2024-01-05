@@ -25,9 +25,7 @@ function Proyectos({proyectos}) {
                                     <i className="experiencia__icon ri-link"></i>
                                 </a>
                             </div>
-                            <div className="proyecto__heading">
-                                <h3>{proyecto.titulo}</h3>
-                            </div>
+                            <h3 className="proyecto__heading">{proyecto.titulo}</h3>
                         </div>
                     </div>
                 </div>
