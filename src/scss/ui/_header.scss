@@ -11,7 +11,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 1rem;
+    // padding: 1rem;
     @include m.tablet {
         width: 90%;
     }
@@ -24,8 +24,8 @@
         gap: 2rem;
     }
     &__logo {
-        width: 4.5rem;
-        height: 4.5rem;
+        width: 5rem;
+        height: 5rem;
         background-color: v.$colorPrimary;
         display: flex;
         justify-content: center;
@@ -38,18 +38,24 @@
     &__img {
         width: 3rem;
         @include m.desktop {
-            width: 4rem;
+            width: 5rem;
         }
     }
 
     &__hamburger {
-        width: 4.5rem;
-        height: 4.5rem;
+        width: 5rem;
+        height: 5rem;
         background-color: v.$colorPrimary;
         @include m.desktop {
             width: 8rem;
             height: 8rem;
-        }  
+        } 
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+    }
+    .header__hamburgerImg {
+        width: 10rem;
     }
 
 }

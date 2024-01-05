@@ -1,5 +1,6 @@
 import React from 'react'
-import logo from '../assets/logo.svg'
+import logo from '../assets/logo2.svg'
+import hamburguer from '../assets/menu.svg';
 
 function Header() {
   return (
@@ -21,7 +22,13 @@ function Header() {
         </nav>
 
         <div className="header__hamburger">
+          {/* <img className="header__hamburgerImg" src={hamburguer} alt="" /> */}
 
+          <a className="header__iconMenu hamburger hamburger--slider" type="button" id="menu">
+            <span className="hamburger-box">
+            <span className="hamburger-inner"></span>
+            </span>
+          </a>
         </div>
     </header>
   )
