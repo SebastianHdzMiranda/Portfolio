@@ -1,0 +1,62 @@
+@use '../bases/variables' as v; 
+@use '../bases/mixins' as m;
+
+.educacion {
+    @include m.espaciado;
+    background-color: v.$bgColor;
+    padding-bottom: 8rem;
+    margin-top: 8rem;
+    @include m.tablet {
+        margin-top: 13rem;
+        padding-bottom: 13rem;
+    }
+    .educacion__h5 {
+        text-align: center;
+    }
+    .educacion__heading {
+        text-align: center;
+        max-width: 75rem;
+        margin: 0 auto 10rem auto;
+    }
+    .educacion__grid {
+        @include m.grid(1, 5rem);
+
+        @include m.desktop {
+            @include m.grid(2, 5rem);
+        }
+    }   
+    .educacion__date {
+        border: 1px solid v.$colorPrimary;
+        color: v.$colorPrimary;
+        padding: 1.5rem 2.5rem;
+        display: inline-block;
+        margin-bottom: 2rem;
+        font-size: 1.8rem;
+    }
+    .educacion__seccion-heading {
+        font-size: 3rem;
+        font-weight: 600;
+        letter-spacing: unset;
+    }
+}
+
+.skills {
+    margin-top: 7rem;
+    @include m.grid(1, 5rem);
+
+    @include m.desktop {
+        @include m.grid(2, 5rem);
+    }
+    .skill {
+        padding: 1rem 4rem 1.5rem 4rem;
+        background-color: v.$headerColor;
+        opacity: 1;
+        position: relative;
+
+
+    }
+    .skill__nombre {
+        color: v.$blanco;
+        margin-top: .6rem;
+    }
+}

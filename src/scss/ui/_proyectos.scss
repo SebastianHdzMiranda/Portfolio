@@ -1,0 +1,94 @@
+@use '../bases/variables' as v; 
+@use '../bases/mixins' as m;
+
+.proyectos {
+    @include m.espaciado;
+    .proyectos__heading {
+        max-width: 83rem;
+    }
+    .proyectos__grid {
+        margin-top: 8rem;
+        @include m.grid(1, 4rem);
+        @include m.desktop {
+            @include m.grid(2, 2rem);
+            padding-inline: 8.1rem;
+        }
+    }
+}
+.proyecto {
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #09101a2e;    
+
+    }
+    .proyecto__img {
+        min-height: 25rem;
+        object-fit: cover;
+        transition: all 1s cubic-bezier(0,0,.2,1);
+    }
+    .proyecto__info {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        // background-image: linear-gradient(to bottom, transparentize( v.$bgBody, 1 ) 0%, transparentize(v.$bgBody, .2%) 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        opacity: 0;
+        overflow: hidden;
+        transition: all .5s ease-in-out;
+        background: #1d2737cc;
+        background: #09101ad1;
+;
+
+    }
+    .proyecto__contenido {
+        padding: 3rem 2rem;
+        transform: translateY(1rem);
+        transition: all .5s cubic-bezier(0,0,.2,1);
+        opacity: 0;
+        transition-delay: .15s;
+        height: 100%;
+
+        @include m.tablet {
+            padding: 4rem;
+        }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &:hover {
+        .proyecto__info {
+            opacity: 1;
+        }
+        .proyecto__contenido {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+
+    }
+    .proyecto__links {
+        display: flex;
+        gap: 1rem;
+        i {
+            font-size: 3.5rem;
+        }
+    }
+    .proyecto__heading {
+        position: absolute;
+        bottom: 0;
+        padding: 4rem;
+        // color: v.$colorPrimary;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+    }
+
+}
