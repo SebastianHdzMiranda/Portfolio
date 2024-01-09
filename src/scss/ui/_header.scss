@@ -78,14 +78,43 @@
         font-weight: 600;
         transition: color .4s ease;
         letter-spacing: 1.3px;
+        position: relative;
+        padding: 1rem;
+        &::before,
+        &::after {
+            content: '';
+            background-color: v.$colorPrimary;
+            position: absolute;
+            width: 0%;
+            height: 50%;
+            display: block;
+            z-index: -1;
+            transition: all .6s;
+        }
+
+        &::before {
+            top: 0;
+            left: 0;
+        }
+        &::after {
+            top: 50%;
+            right: 0;
+        }
+
         &:hover {
-            color: v.$colorPrimary;
+            color: v.$headerColor;
+            transition: all .6s;
+            font-weight: 700;
+            &::before,
+            &::after {
+                width: 100%;
+            }
         }
     }
     
     @include m.desktop {
         display: flex;
-        gap: 4rem;
+        // gap: 4rem;
     }
 }
 
