@@ -11,7 +11,7 @@
     }
     .servicios__grid {
         margin-top: 13rem;
-        @include m.grid(1, 4rem);
+        @include m.grid(1, 8rem);
         @include m.tablet {
             @include m.grid(4, 4rem);
         }

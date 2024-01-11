@@ -16,12 +16,15 @@
         }
     }
     .innovacion__heading {
+        width: fit-content;
         font-size: 3rem;
         @include m.tablet {
             font-size: 5.5rem;
         }
     }
     .innovacion__heading-span {
+        width: fit-content;
+
         font-size: 8rem;
 
         @include m.tablet {

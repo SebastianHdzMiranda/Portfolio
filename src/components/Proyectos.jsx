@@ -1,13 +1,15 @@
 import React from 'react'
 import cafeteria from '../assets/portafolio/cafeteria.png';
+import Animacion from './Animacion';
 
 function Proyectos({proyectos}) {
 
   return (
     <section className='proyectos contenedor'>
-        <h5 className="proyectos__h5">Mi Portafolio</h5>
-
-        <h2 className="proyectos__heading">Elevate your brand to new heights with our portfolio expertise</h2>
+        <Animacion>
+            <h5 className="proyectos__h5">Mi Portafolio</h5>
+            <h2 className="proyectos__heading">Elevate your brand to new heights with our portfolio expertise</h2>
+        </Animacion>
 
         <div className="proyectos__grid">
 

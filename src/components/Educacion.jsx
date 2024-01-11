@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
+import Animacion from './Animacion';
 
 function Educacion({educacionSeccion, skills}) {
 
@@ -10,7 +11,6 @@ function Educacion({educacionSeccion, skills}) {
         const animacion = miRef.current;
 
         const observer = new IntersectionObserver((entries) => {
-            console.log(entries[0])
             if (entries[0].isIntersecting) {
                 setIsVisible(true);
                 return;
@@ -31,20 +31,23 @@ function Educacion({educacionSeccion, skills}) {
   return (
     <section className='educacion'>
         <div className="educacion__contenido contenedor">
-            <h5 className="educacion__h5">Education & skill</h5>
-            <h2 className="educacion__heading">Showcasing your talent amplifying your impact</h2>
+            <Animacion>
+                <h5 className="educacion__h5">Education & skill</h5>
+                <h2 className="educacion__heading">Showcasing your talent amplifying your impact</h2>
+            </Animacion>
 
-            <div className="educacion__grid">
+                <div className="educacion__grid">
 
-                {educacionSeccion.map( (seccion, i) => 
-                    
-                    <div className="educacion__seccion" key={i}>
-                        <span className="educacion__date">{seccion.date}</span>
-                        <h3 className="educacion__seccion-heading">{seccion.title}</h3>
-                        <p className="educacion__text">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed thisnquia consequuntur magni dolores eos qui ratione voluptatem</p>
-                    </div>
-                )}
-            </div>
+                    {educacionSeccion.map( (seccion, i) => 
+                        <Animacion position={'x'}>
+                            <div className="educacion__seccion" key={i}>
+                                <span className="educacion__date">{seccion.date}</span>
+                                <h3 className="educacion__seccion-heading">{seccion.title}</h3>
+                                <p className="educacion__text">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed thisnquia consequuntur magni dolores eos qui ratione voluptatem</p>
+                            </div>
+                        </Animacion>    
+                    )}
+                </div>
 
             <div className="skills" ref={miRef}>
 

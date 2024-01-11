@@ -1,12 +1,15 @@
 import React from 'react'
+import Animacion from './Animacion';
 
 function Innovacion() {
   return (
     <section className='innovacion contenedor'>
         <div className="innovacion__contenido">
-            <h2 className="innovacion__heading">
-                <span className='innovacion__heading-span'>Design</span> and Innovation
-            </h2>
+            <Animacion>
+                <h2 className="innovacion__heading">
+                    <span className='innovacion__heading-span'>Design</span> and Innovation
+                </h2>
+            </Animacion>
             <p className="innovacion__texto">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit auting fugit sed thisnquia consequuntur magni dolores eos designer heresm qui ratione voluptatem sequi nesciuNeque porro quisquam est, oursqui dolorem ipsum quia dolor sit amet consectetur, adipisci velit, sed quia non numquam</p>
 
             <div className="innovacion__estadistics">
@@ -31,7 +34,9 @@ function Innovacion() {
             </div>
         </div>
         <div className="formulario">
-            <h2 className="formulario__heading">GET TOUCH ME?</h2>
+            <Animacion>
+                <h2 className="formulario__heading">GET TOUCH ME?</h2>
+            </Animacion>
             <p className="formulario__texto">For your car we will do everything advice design in us repairs and maintenance We are the some preferred.</p>
 
             <form>

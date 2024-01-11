@@ -43,7 +43,6 @@
     &__boton {
         @include m.boton;
         font-family: v.$fuentePrincipal;
-        // font-weight: 500;
     }
     &__banner {
         flex: 1;

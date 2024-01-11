@@ -50,6 +50,7 @@ function App() {
       <Innovacion />
       <Educacion educacionSeccion={educacionSeccion} skills={skills}/>
       <Proyectos proyectos={proyectos}/>
+
     </>
   )
 }
