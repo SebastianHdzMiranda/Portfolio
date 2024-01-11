@@ -1,16 +1,32 @@
-import React from 'react'
-import styled from '@emotion/styled';
+import React, { useEffect, useRef, useState } from 'react'
 
-const DivPorcentaje = styled.div`
-    display: block;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: ${(props) => props.p};
-    height: .6rem;
-    background-color: #55e6a5;
-`;
 function Educacion({educacionSeccion, skills}) {
+
+    const [isVisible, setIsVisible] = useState(false);
+    const miRef = useRef(null);
+
+    useEffect(()=> {
+        // sustituye a document.querySelector
+        const animacion = miRef.current;
+
+        const observer = new IntersectionObserver((entries) => {
+            console.log(entries[0])
+            if (entries[0].isIntersecting) {
+                setIsVisible(true);
+                return;
+            }
+            setIsVisible(false);
+        });
+
+       observer.observe(animacion);
+
+        return () => {
+          // Limpia el observador cuando el componente se desmonta
+          observer.disconnect();
+        };
+    }, []);
+    
+    
 
   return (
     <section className='educacion'>
@@ -30,15 +46,16 @@ function Educacion({educacionSeccion, skills}) {
                 )}
             </div>
 
-            <div className="skills">
+            <div className="skills" ref={miRef}>
 
                 {skills.map( (skill, i) => 
                     <div className="skill" key={i}>
                         <p className="skill__nombre">{skill.nombre}</p>
-                        <DivPorcentaje p={skill.porcentaje} ></DivPorcentaje>
+                        <div className='skill__progress'  p={skill.porcentaje} style={isVisible ? {width: skill.porcentaje} : {}}></div>
                     </div>
                 )}
             </div>
+
         </div>
     </section>
   )

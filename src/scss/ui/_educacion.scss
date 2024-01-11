@@ -59,4 +59,15 @@
         color: v.$blanco;
         margin-top: .6rem;
     }
+    .skill__progress {
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: .6rem;
+        background-color: #55e6a5;
+        width: 0%;
+        transition: width 1s;
+        transition-delay: .3s;
+    }
 }
