@@ -39,9 +39,9 @@ const Animacion = ({children, position, slide}) => {
                 animate={controls}
                 transition={
                     position ? 
-                        { duration: .5, delay: 0.5}
+                        { duration: .5, delay: 0.25}
                     :
-                        { duration: 0.6, delay: 0.25}
+                        { duration: 0.5, delay: 0.3}
                 }
             >
             {children}  
@@ -61,6 +61,7 @@ const Animacion = ({children, position, slide}) => {
                         bottom: 4,
                         left: 0,
                         right: 0,
+                        // height: '100%',
                         background: '#55e6a5',
                         zIndex: 20,
                     }}
