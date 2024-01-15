@@ -18,6 +18,7 @@ body {
     font-size: 1.6rem;
     overflow-x: hidden;
     color: v.$blanco;
+    // cursor: none;
 }
 /* Ocultar la barra de desplazamiento */
 ::-webkit-scrollbar {
@@ -36,6 +37,30 @@ body {
     width: 95%;
     max-width: 130rem;
     margin: 0 auto;
+}
+.cursor-dot {
+    width: 5px;
+    height: 5px;
+    // background-color: v.$blanco;
+}
+.cursor-out {
+    width: 30px;
+    height: 30px;
+    border: 2px solid transparentize(v.$blanco, .5);
+}
+.cursor-dot,
+.cursor-out {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 1;
+    pointer-events: none;
+    display: none;
+    @include m.desktop {
+        display: unset;
+    }
 }
 img {
     max-width: 100%;

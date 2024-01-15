@@ -38,10 +38,10 @@ function Testimoniales() {
   return (
     <section className='contenedor testimoniales'>
         <Animacion>
-            <h5 className="testimoniales__h5">clients review</h5>
+            <h5 className="testimoniales__h5">Revisión De</h5>
         </Animacion>
         <Animacion>
-            <h2 className="testimoniales__heading">My testomonials</h2>
+            <h2 className="testimoniales__heading">Mis Testimonios</h2>
         </Animacion>
 
 

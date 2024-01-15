@@ -32,6 +32,9 @@
     &__heading {
         text-transform: uppercase;
         margin-bottom: 3rem;
+        &:hover ~ .cursor-out {
+            width: 60px;
+        }
     }
     &__heading-span {
         color: v.$colorPrimary;

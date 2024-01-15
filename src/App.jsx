@@ -15,6 +15,7 @@ import guitarLA from './assets/portafolio/guitarLA.png';
 import nailsSite from './assets/portafolio/nails-site.png';
 import nucleus from './assets/portafolio/nucleus.png';
 import realState from './assets/portafolio/real-state.png';
+import Cursor from './components/Cursor';
 
 function App() {
   
@@ -46,13 +47,14 @@ function App() {
 
     <>
       <Header />
+      <Cursor />
       <Hero />
       <Servicios />
       <About />
-      <Innovacion />
       <Educacion educacionSeccion={educacionSeccion} skills={skills}/>
       <Proyectos proyectos={proyectos}/>
       <Testimoniales />
+      <Innovacion />
     </>
   )
 }

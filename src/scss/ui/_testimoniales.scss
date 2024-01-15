@@ -3,7 +3,6 @@
 
 .testimoniales {
     @include m.espaciado();
-    padding-bottom: 8rem;
     .testimoniales__h5,
     .testimoniales__heading{
         text-align: center;
