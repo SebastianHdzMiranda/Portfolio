@@ -39,7 +39,7 @@ function Educacion({educacionSeccion, skills}) {
                 <div className="educacion__grid">
 
                     {educacionSeccion.map( (seccion, i) => 
-                        <Animacion position={'x'}>
+                        <Animacion position={'x'} key={i}>
                             <div className="educacion__seccion" key={i}>
                                 <span className="educacion__date">{seccion.date}</span>
                                 <h3 className="educacion__seccion-heading">{seccion.title}</h3>

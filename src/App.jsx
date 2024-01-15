@@ -5,6 +5,8 @@ import Hero from './components/Hero';
 import Innovacion from './components/Innovacion';
 import Proyectos from './components/Proyectos';
 import Servicios from './components/Servicios'
+import Testimoniales from './components/Testimoniales';
+
 import './scss/app.scss';
 
 import cafeteria from './assets/portafolio/cafeteria.png';
@@ -50,7 +52,7 @@ function App() {
       <Innovacion />
       <Educacion educacionSeccion={educacionSeccion} skills={skills}/>
       <Proyectos proyectos={proyectos}/>
-
+      <Testimoniales />
     </>
   )
 }

@@ -1,0 +1,94 @@
+@use '../bases/variables' as v; 
+@use '../bases/mixins' as m;
+
+.testimoniales {
+    @include m.espaciado();
+    padding-bottom: 8rem;
+    .testimoniales__h5,
+    .testimoniales__heading{
+        text-align: center;
+    }
+    .testimoniales__h5 {
+        text-transform: uppercase;
+    }
+    .testimoniales__contenido {
+        margin-top: 6rem;
+    }
+    &__swiper {
+        cursor: grab;
+    }
+    &__slide {
+        padding-top: 4rem;
+        @include m.tablet {
+            padding-top: 5rem;
+
+        }
+    }
+
+}
+
+.testimonial {
+    // max-width: 80rem;
+    border: 2px solid transparentize(v.$bodyColor, .7);
+    padding: 4rem 3rem 2rem 3rem;
+    position: relative;
+    // margin: 0 1rem;
+    .testimonial__img-container {
+        position: absolute;
+        top: -4rem;
+        right: 4rem;
+        @include m.tablet {
+            top: -5rem;
+            right: 6rem;
+        }
+    }
+    .testimonail__img {
+        border-radius: 50%;
+        width: 8rem;
+        @include m.tablet {
+            width: 10rem;
+        }
+    }   
+    .testimonal__puntuacion {
+        display: flex;
+        gap: .8rem;
+        margin-bottom: 2rem;
+        
+    }
+    .testimonial__star {
+        width: 2rem;
+    }
+    .testimonial__nombre {
+        // font-size: 2.2rem;
+        margin-bottom: .5rem;
+    }
+    .testimonial__area {
+        text-transform: uppercase;
+        margin: 0;
+        font-size: 1.4rem;
+        letter-spacing: 1px;
+        font-weight: 400;
+    }
+    .testimonal__comentario {
+
+        display: flex;
+        gap: 1rem;
+        align-items: start;
+
+        @include m.tablet{
+            &::after {
+                content: '';
+                background-image: url(../assets/bloquote.png);
+                padding: 2.5rem;
+                margin-top: -.2rem;
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                display: inline-block;
+            }
+        }
+    }
+
+
+}
+
