@@ -9,20 +9,20 @@
     @include m.desktop {
         @include m.grid(2, 3rem);
     }
-    .innovacion__contenido {
+    &__contenido {
         margin-bottom: 2rem;
         @include m.desktop {
             margin-bottom: unset;
         }
     }
-    .innovacion__heading {
+    &__heading {
         width: fit-content;
         font-size: 3rem;
         @include m.tablet {
             font-size: 5.5rem;
         }
     }
-    .innovacion__heading-span {
+    &__heading-span {
         width: fit-content;
 
         font-size: 8rem;
@@ -31,10 +31,10 @@
             font-size: 12rem;
         }
     }
-    .innovacion__texto {
+    &__texto {
         margin-block: 3rem;
     }
-    .innovacion__estadistics {
+    &__estadistics {
         margin-top: 4rem;
         display: flex;
         flex-direction: column;
@@ -43,21 +43,21 @@
             flex-direction: row;
         }
     }
-    .innovacion__estadistic {
+    &__estadistic {
         flex: 1;
         text-align: center;
         background-color: v.$bgColor;
         padding: 4rem;
     }
-    .innovacion__logo {
+    &__logo {
         width: 12rem;
         margin-bottom: 2rem;
     }
-    .innovacion__number {
+    &__number {
         font-weight: 900;
         font-size: 4rem;
     }
-    .innovacion__estadistic-text {
+    &__estadistic-text {
         font-weight: 500;
         color: v.$blanco;
     }
@@ -70,7 +70,7 @@
     @include m.tablet {
         padding: 5rem;
     }
-    .formulario__heading {
+    &__heading {
         font-weight: 400;
         font-size: 3rem;
         margin: 0;
@@ -78,10 +78,10 @@
             font-size: 4.5rem;
         }
     }
-    .formulario__texto {
+    &__texto {
         margin-block: 3rem;
     }
-    .formulario__input {
+    &__input {
         display: block;
         width: 100%;
         margin-bottom: 3rem;
@@ -96,7 +96,7 @@
             color: v.$bodyColor;
         }
     }
-    .formulario__textArea {
+    &__textArea {
         display: block;
         width: 100%;
         resize: none;
@@ -113,7 +113,7 @@
             color: v.$bodyColor;
         }
     }
-    .formulario__submit {
+    &__submit {
         @include m.boton;
         border: none;
         cursor: pointer;

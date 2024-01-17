@@ -3,10 +3,10 @@
 
 .proyectos {
     @include m.espaciado;
-    .proyectos__heading {
+    &__heading {
         max-width: 83rem;
     }
-    .proyectos__grid {
+    &__grid {
         margin-top: 8rem;
         padding-inline: 2rem;
         @include m.grid(1, 2rem);
@@ -23,27 +23,26 @@
 }
 .proyecto {
     background-color: v.$bgColor;
-    // border-radius: 1rem;
     overflow: hidden;
     text-align: center;
 
-    .proyecto__img {
+    &__img {
         min-height: 20rem;
         object-fit: cover;
         transition: all 1s cubic-bezier(0,0,.2,1);
     } 
 
-    .proyecto__info {
+    &__info {
         padding: 2rem;
     }
 
-    .proyecto__heading {
+    &__heading {
         margin-bottom: 2rem;
         // text-transform: uppercase;
         // color: v.$colorPrimary;
         font-size: 2.5rem;
     }
-    .proyecto__tags {
+    &__tags {
         display: flex;
         flex-wrap: wrap;
         gap: 1rem;
@@ -51,7 +50,7 @@
         margin-bottom: 2rem;
     }
 
-    .proyecto__tag {
+    &__tag {
         margin: 0;
         background-color: #141c27;
         border-radius: 10rem;
@@ -60,7 +59,7 @@
         font-weight: 600;
     }
 
-    .proyecto__links {
+    &__links {
         display: flex;
         justify-content: center;
         gap: 1rem;

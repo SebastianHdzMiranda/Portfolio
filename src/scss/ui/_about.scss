@@ -11,26 +11,26 @@
         padding-top: 15rem;
         align-items: center;
     }
-    .about__contenido {
+    &__contenido {
         flex: 2;
     }
-    .about__h5 {
+    &__h5 {
         text-align: left;
         margin: 0;
     }
-    .about__heading {
+    &__heading {
         margin-bottom: 5rem;
         @include m.tablet{
             margin-bottom: 10rem;
         }
     }
-    .about__info {
+    &__info {
         position: relative;
         @include m.desktop {
             padding-left: 13rem;
         }
     }
-    .about__texto {
+    &__texto {
         display: flex;
         max-width: 55rem;
         margin-bottom: 5rem;
@@ -54,12 +54,12 @@
         }
         
     }
-    .about__enlace {
+    &__enlace {
         @include m.boton;
         display: inline-block;
         padding-block: 2.5rem;
     }
-    .about__grafico {
+    &__grafico {
         flex: 1;
         position: relative;
         padding: 2rem 2rem 0 0;

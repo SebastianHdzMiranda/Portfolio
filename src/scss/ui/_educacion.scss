@@ -10,22 +10,22 @@
         margin-top: 13rem;
         padding-bottom: 13rem;
     }
-    .educacion__h5 {
+    &__h5 {
         text-align: center;
     }
-    .educacion__heading {
+    &__heading {
         text-align: center;
         max-width: 75rem;
         margin: 0 auto 10rem auto;
     }
-    .educacion__grid {
+    &__grid {
         @include m.grid(1, 5rem);
 
         @include m.desktop {
             @include m.grid(2, 5rem);
         }
     }   
-    .educacion__date {
+    &__date {
         border: 1px solid v.$colorPrimary;
         color: v.$colorPrimary;
         padding: 1.5rem 2.5rem;
@@ -33,7 +33,7 @@
         margin-bottom: 2rem;
         font-size: 1.8rem;
     }
-    .educacion__seccion-heading {
+    &__seccion-heading {
         font-size: 3rem;
         font-weight: 600;
         letter-spacing: unset;
@@ -47,19 +47,18 @@
     @include m.desktop {
         @include m.grid(2, 5rem);
     }
-    .skill {
-        padding: 1rem 3rem 1.5rem 3rem;
-        background-color: v.$headerColor;
-        opacity: 1;
-        position: relative;
+}
+.skill {
+    padding: 1rem 3rem 1.5rem 3rem;
+    background-color: v.$headerColor;
+    opacity: 1;
+    position: relative;
 
-
-    }
-    .skill__nombre {
+    &__nombre {
         color: v.$blanco;
         margin-top: .6rem;
     }
-    .skill__progress {
+    &__progress {
         display: block;
         position: absolute;
         left: 0;

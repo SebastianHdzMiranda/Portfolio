@@ -19,7 +19,7 @@
         align-items: center;
         justify-content: center;
     }
-    .newsletter__heading {
+    &__heading {
         margin-bottom: 3rem;
         font-size: 2rem;
         letter-spacing: 1px;
@@ -28,13 +28,13 @@
             font-size: 3rem;
         }
     }
-    .newsletter__form {
+    &__form {
         padding: 1rem;
         @include m.tablet {
             padding: 0;
         }
     }
-    .newsletter__form-content {
+    &__form-content {
         border: 1px solid v.$colorPrimary;
         // padding: .7rem;
         display: flex;
@@ -44,7 +44,7 @@
             min-width: 60rem;
         }
     }
-    .newsletter__input {
+    &__input {
         height: 100%;
         width: 100%;
         &:focus {
@@ -54,10 +54,8 @@
         background-color: transparent;
         padding-inline: 2rem;
         color: v.$blanco;
-        // font-weight: 600;
-        
     }
-    .newsletter__submit {
+    &__submit {
         @include m.boton();
         border: none;
         padding: 2.5rem;

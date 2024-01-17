@@ -17,7 +17,7 @@
         width: 95%;
         padding: unset;
     }
-    .header__contenido {
+    &__contenido {
         width: 95%;
         margin: 0 auto;
         display: flex;
@@ -65,7 +65,7 @@
         align-items: center;
         justify-content: center; 
     }
-    .header__hamburgerImg {
+    &__hamburgerImg {
         width: 10rem;
     }
 
@@ -114,7 +114,6 @@
     
     @include m.desktop {
         display: flex;
-        // gap: 4rem;
     }
 }
 

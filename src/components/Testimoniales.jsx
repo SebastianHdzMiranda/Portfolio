@@ -61,52 +61,10 @@ function Testimoniales() {
                 <SwiperSlide className='testimoniales__slide'>
                     <div className="testimonial">
                         <div className="testimonial__img-container">
-                            <img src={person1} alt="Person1" className="testimonail__img" />
+                            <img src={person1} alt="Person1" className="testimonial__img" />
                         </div>
 
-                        <div className="testimonal__puntuacion">
-                            <img className='testimonial__star' src={star} alt="Star" />
-                            <img className='testimonial__star' src={star} alt="Star" />
-                            <img className='testimonial__star' src={star} alt="Star" />
-                            <img className='testimonial__star' src={star} alt="Star" />
-                            <img className='testimonial__star' src={star} alt="Star" />
-                        </div>
-
-                        <h3 className="testimonial__nombre">Sebastian</h3>
-                        <p className="testimonial__area">Content Manager</p>
-                        <p className="testimonal__comentario">
-                            Beautiful minimalist design and great, fast response with support. Highly recommend. Thanks Marketify!                                        
-                        </p>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide className='testimoniales__slide'>
-                    <div className="testimonial">
-                        <div className="testimonial__img-container">
-                            <img src={person1} alt="Person1" className="testimonail__img" />
-                        </div>
-
-                        <div className="testimonal__puntuacion">
-                            <img className='testimonial__star' src={star} alt="Star" />
-                            <img className='testimonial__star' src={star} alt="Star" />
-                            <img className='testimonial__star' src={star} alt="Star" />
-                            <img className='testimonial__star' src={star} alt="Star" />
-                            <img className='testimonial__star' src={star} alt="Star" />
-                        </div>
-
-                        <h3 className="testimonial__nombre">Armin Van Buuren</h3>
-                        <p className="testimonial__area">Content Manager</p>
-                        <p className="testimonal__comentario">
-                            Beautiful minimalist design and great, fast response with support. Highly recommend. Thanks Marketify!                                        
-                        </p>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide className='testimoniales__slide'>
-                    <div className="testimonial">
-                        <div className="testimonial__img-container">
-                            <img src={person1} alt="Person1" className="testimonail__img" />
-                        </div>
-
-                        <div className="testimonal__puntuacion">
+                        <div className="testimonial__puntuacion">
                             <img className='testimonial__star' src={star} alt="Star" />
                             <img className='testimonial__star' src={star} alt="Star" />
                             <img className='testimonial__star' src={star} alt="Star" />
@@ -116,7 +74,7 @@ function Testimoniales() {
 
                         <h3 className="testimonial__nombre">Sebastian</h3>
                         <p className="testimonial__area">Content Manager</p>
-                        <p className="testimonal__comentario">
+                        <p className="testimonial__comentario">
                             Beautiful minimalist design and great, fast response with support. Highly recommend. Thanks Marketify!                                        
                         </p>
                     </div>
@@ -124,10 +82,10 @@ function Testimoniales() {
                 <SwiperSlide className='testimoniales__slide'>
                     <div className="testimonial">
                         <div className="testimonial__img-container">
-                            <img src={person1} alt="Person1" className="testimonail__img" />
+                            <img src={person1} alt="Person1" className="testimonial__img" />
                         </div>
 
-                        <div className="testimonal__puntuacion">
+                        <div className="testimonial__puntuacion">
                             <img className='testimonial__star' src={star} alt="Star" />
                             <img className='testimonial__star' src={star} alt="Star" />
                             <img className='testimonial__star' src={star} alt="Star" />
@@ -137,7 +95,49 @@ function Testimoniales() {
 
                         <h3 className="testimonial__nombre">Armin Van Buuren</h3>
                         <p className="testimonial__area">Content Manager</p>
-                        <p className="testimonal__comentario">
+                        <p className="testimonial__comentario">
+                            Beautiful minimalist design and great, fast response with support. Highly recommend. Thanks Marketify!                                        
+                        </p>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide className='testimoniales__slide'>
+                    <div className="testimonial">
+                        <div className="testimonial__img-container">
+                            <img src={person1} alt="Person1" className="testimonial__img" />
+                        </div>
+
+                        <div className="testimonial__puntuacion">
+                            <img className='testimonial__star' src={star} alt="Star" />
+                            <img className='testimonial__star' src={star} alt="Star" />
+                            <img className='testimonial__star' src={star} alt="Star" />
+                            <img className='testimonial__star' src={star} alt="Star" />
+                            <img className='testimonial__star' src={star} alt="Star" />
+                        </div>
+
+                        <h3 className="testimonial__nombre">Sebastian</h3>
+                        <p className="testimonial__area">Content Manager</p>
+                        <p className="testimonial__comentario">
+                            Beautiful minimalist design and great, fast response with support. Highly recommend. Thanks Marketify!                                        
+                        </p>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide className='testimoniales__slide'>
+                    <div className="testimonial">
+                        <div className="testimonial__img-container">
+                            <img src={person1} alt="Person1" className="testimonial__img" />
+                        </div>
+
+                        <div className="testimonial__puntuacion">
+                            <img className='testimonial__star' src={star} alt="Star" />
+                            <img className='testimonial__star' src={star} alt="Star" />
+                            <img className='testimonial__star' src={star} alt="Star" />
+                            <img className='testimonial__star' src={star} alt="Star" />
+                            <img className='testimonial__star' src={star} alt="Star" />
+                        </div>
+
+                        <h3 className="testimonial__nombre">Armin Van Buuren</h3>
+                        <p className="testimonial__area">Content Manager</p>
+                        <p className="testimonial__comentario">
                             Beautiful minimalist design and great, fast response with support. Highly recommend. Thanks Marketify!                                        
                         </p>
                     </div>

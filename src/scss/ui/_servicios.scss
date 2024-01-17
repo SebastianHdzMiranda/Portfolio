@@ -5,11 +5,11 @@
     @include m.espaciado;
     justify-content: center;
     text-align: center;
-    .servicios__heading {
+    &__heading {
         max-width: 75rem;
         margin: 0 auto;
     }
-    .servicios__grid {
+    &__grid {
         margin-top: 13rem;
         @include m.grid(1, 8rem);
         // @include m.tablet {
@@ -29,17 +29,17 @@
         margin-bottom: 0;
     }
 
-    .servicio__logo {
+    &__logo {
         position: relative;
         width: 9rem;
         margin-top: -8.2rem;
         margin-bottom: 3rem;
         z-index: 10;
     }
-    .servicio__heading {
+    &__heading {
         text-transform: uppercase;
     }
-    .servicio__texto {
+    &__texto {
         line-height: 1.7;
     }
 

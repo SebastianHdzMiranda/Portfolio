@@ -7,13 +7,13 @@
     @include m.tablet {
         margin-top: 5rem;
     }
-    .footer__contactos {
+    &__contactos {
         padding-bottom: 5rem;
         @include m.tablet {
             padding-block: 6rem;
         }
     }
-    .footer__contactos-grid {
+    &__contactos-grid {
         @include m.grid(1, 4rem);
         @include m.grid(1, 5rem);
         @include m.tablet {
@@ -22,7 +22,7 @@
             @include m.grid(3, 2rem);
         }
     }
-    .footer__contacto {
+    &__contacto {
         text-align: center;
         @include m.tablet {
             display: flex;
@@ -35,7 +35,7 @@
             align-items: start;
         }
     }
-    .footer__contacto-imgContent {
+    &__contacto-imgContent {
         background-color: v.$colorPrimary;
         display: inline-block;
         border-radius: 50%;
@@ -53,20 +53,17 @@
             min-width: 10rem; 
         }
     }
-    .footer__contacto-img {
+    &__contacto-img {
         width: 3.5rem;
         @include m.desktop {
             width: 4rem;
         }
     }
-    .footer__contacto-info {
-
-    }
-    .footer__contacto-heading {
+    &__contacto-heading {
         margin-bottom: 1.5rem;
         letter-spacing: 0;
     }
-    .footer__contacto-texto {
+    &__contacto-texto {
         font-weight: 400;
         width: 80%;
         margin: 0 auto;
@@ -75,11 +72,11 @@
             width: 100%;
         }
     }
-    .footer__copyright {
+    &__copyright {
         border-top: 1px solid transparentize(v.$blanco, .93);
         padding-block: 4rem;
     }
-    .footer__copyright-text {
+    &__copyright-text {
         margin: 0;
         color: transparentize(v.$bodyColor, .6);
         text-align: center;
