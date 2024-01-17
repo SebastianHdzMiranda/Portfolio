@@ -18,22 +18,30 @@ import { Autoplay } from 'swiper/modules';
 
 function Testimoniales() {
 
-    const [isMobile, setIsMobile] = useState('');
+    const [isMobile, setIsMobile] = useState(1);
 
-    useEffect(() => {
-        // Función para actualizar el estado cuando cambia la resolución
-        const handleResize = () => {
-            setIsMobile(window.innerWidth < 768);
-        };
+    useEffect(() => {   
+        ajustarSlidesPerView();
     
         // Agregar el evento de escucha del tamaño de la pantalla
-        window.addEventListener('resize', handleResize);
+        window.addEventListener('resize', ajustarSlidesPerView);
     
         // Limpiar el evento de escucha al desmontar el componente
         return () => {
-          window.removeEventListener('resize', handleResize);
+          window.removeEventListener('resize', ajustarSlidesPerView);
         };
     }, []);
+
+    const ajustarSlidesPerView = () => {
+        const anchoVentana = window.innerWidth;
+        if (anchoVentana >= 768) {
+          // Ancho mayor o igual a 768px (tablets y desktops)
+          setIsMobile(2);
+          return;
+        } 
+        // Ancho menor a 768px (móviles)
+        setIsMobile(1);
+    };
 
   return (
     <section className='contenedor testimoniales'>
@@ -55,7 +63,7 @@ function Testimoniales() {
                 loop={true}
                 spaceBetween={20}
                 effect='fade'
-                slidesPerView={isMobile ? '1' : '2'} 
+                slidesPerView={isMobile} 
             >
                 {/* usar .map */}
                 <SwiperSlide className='testimoniales__slide'>
