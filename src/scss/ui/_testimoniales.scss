@@ -36,7 +36,7 @@
         position: absolute;
         top: -4rem;
         right: 4rem;
-        @include m.tablet {
+        @include m.desktop {
             top: -5rem;
             right: 6rem;
         }
@@ -44,7 +44,7 @@
     .testimonail__img {
         border-radius: 50%;
         width: 8rem;
-        @include m.tablet {
+        @include m.desktop {
             width: 10rem;
         }
     }   

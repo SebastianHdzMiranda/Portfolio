@@ -11,6 +11,7 @@
         padding-inline: 2rem;
         @include m.grid(1, 2rem);
         @include m.tablet {
+            padding-inline: 0;
             @include m.grid(2, 2rem);
         }
         @include m.desktop {

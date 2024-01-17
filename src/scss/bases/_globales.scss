@@ -37,6 +37,13 @@ body {
     width: 95%;
     max-width: 130rem;
     margin: 0 auto;
+
+    @include m.tablet {
+        width: 80%;
+    }
+    @include m.desktop {
+        width: 95%;
+    }
 }
 .cursor-dot {
     width: 5px;

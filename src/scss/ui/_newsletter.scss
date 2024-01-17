@@ -1,0 +1,69 @@
+@use '../bases/variables' as v; 
+@use '../bases/mixins' as m;
+
+.newsletter {
+    margin-top: 8rem;
+    background-image: linear-gradient(to top, transparentize(v.$negro, .1) 0%, transparentize(v.$negro, .1) 100% ), url(../assets/suscribe.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-block: 10rem;
+    background-attachment: fixed;
+    @include m.tablet {
+        padding-block: 15rem;
+        margin-top: 10rem;
+    }
+    @include m.desktop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .newsletter__heading {
+        margin-bottom: 3rem;
+        font-size: 2rem;
+        letter-spacing: 1px;
+        text-align: center;
+        @include m.tablet {
+            font-size: 3rem;
+        }
+    }
+    .newsletter__form {
+        padding: 1rem;
+        @include m.tablet {
+            padding: 0;
+        }
+    }
+    .newsletter__form-content {
+        border: 1px solid v.$colorPrimary;
+        // padding: .7rem;
+        display: flex;
+        align-items: center;
+        background-color: #131313;
+        @include m.tablet {
+            min-width: 60rem;
+        }
+    }
+    .newsletter__input {
+        height: 100%;
+        width: 100%;
+        &:focus {
+            outline: none;
+        }
+        border: none;
+        background-color: transparent;
+        padding-inline: 2rem;
+        color: v.$blanco;
+        // font-weight: 600;
+        
+    }
+    .newsletter__submit {
+        @include m.boton();
+        border: none;
+        padding: 2.5rem;
+        @include m.tablet {
+            padding: 2.5rem 4rem;
+        }
+    }
+
+}

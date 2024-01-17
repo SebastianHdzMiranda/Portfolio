@@ -16,6 +16,8 @@ import nailsSite from './assets/portafolio/nails-site.png';
 import nucleus from './assets/portafolio/nucleus.png';
 import realState from './assets/portafolio/real-state.png';
 import Cursor from './components/Cursor';
+import Newslatter from './components/Newslatter';
+import Footer from './components/Footer';
 
 function App() {
   
@@ -55,6 +57,8 @@ function App() {
       <Proyectos proyectos={proyectos}/>
       <Testimoniales />
       <Innovacion />
+      <Newslatter />
+      <Footer />
     </>
   )
 }

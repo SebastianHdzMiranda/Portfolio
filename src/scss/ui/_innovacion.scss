@@ -4,7 +4,7 @@
 .innovacion {
     padding-top: 8rem;
     @include m.tablet {
-        padding-top: 16rem;
+        padding-top: 13rem;
     }
     @include m.desktop {
         @include m.grid(2, 3rem);
