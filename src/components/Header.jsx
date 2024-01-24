@@ -1,27 +1,10 @@
 import React, { useRef } from 'react'
 import logo from '../assets/logo2.svg'
 import hamburguer from '../assets/menu.svg';
+// import { mostrarNav } from '../helpers/nav';
 
-function Header() {
-  function mostrarNav(e) {
-    e.preventDefault();
-    // variables
-    const nav = document.querySelector('.navegacion');
-    const menu  = document.querySelector('#menu');
-    const body = document.querySelector('body')
+function Header({mostrarNav}) {
 
-
-    // condiciones
-    if (nav.classList.contains('navegacion--activo')) {
-        nav.classList.remove('navegacion--activo');
-        menu.classList.remove('is-active');
-        body.style.overflowY = 'auto';
-    } else{
-        nav.classList.add('navegacion--activo');
-        menu.classList.add('is-active');
-        body.style.overflowY = 'hidden';
-    }
-  }
   return (
     <header className='header contenedor'>
         <div className="header__contenido">
@@ -33,14 +16,6 @@ function Header() {
               </a>
             </div>
           </div>
-
-          {/* <nav className='navegacion'>
-            <a href="#" className="navegacion__enlace">Home</a>
-            <a href="#" className="navegacion__enlace">About</a>
-            <a href="#" className="navegacion__enlace">Service</a>
-            <a href="#" className="navegacion__enlace">Projects</a>
-            <a href="#" className="navegacion__enlace">Contact</a>
-          </nav> */}
 
           <nav className='navegacion'>
             <ul className='navegacion__list'>

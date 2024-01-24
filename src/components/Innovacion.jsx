@@ -35,7 +35,7 @@ function Innovacion() {
         </div>
         <div className="formulario">
             <Animacion>
-                <h2 className="formulario__heading">GET TOUCH ME?</h2>
+                <h2 className="formulario__heading">Get touch me?</h2>
             </Animacion>
             <p className="formulario__texto">For your car we will do everything advice design in us repairs and maintenance We are the some preferred.</p>
 

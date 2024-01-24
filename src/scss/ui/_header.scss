@@ -14,7 +14,7 @@
         padding: 1rem;
     }
     @include m.desktop {
-        width: 95%;
+        width: 90%;
         padding: unset;
     }
     &__contenido {
@@ -163,3 +163,92 @@
    
 }
 
+.filterAside {
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity .5s ease;
+    
+    &--activo {
+        opacity: .5;
+
+    }
+}
+
+.sidebar {
+    display: none;
+    position: fixed;
+    z-index: 200;
+    bottom: 0;
+    height: 100%;
+    right: 0;
+    width: 40rem;
+    transform: translateX(40rem);
+    transition: transform .5s ease;
+    
+    @include m.desktop {
+        display: unset;
+    }
+    
+    &--activo {
+        transform: translateX(0);
+    }
+    &__contenido {
+        overflow-y: scroll;
+        height: 100%;
+        padding-top: 15rem;
+        background-color: v.$bgColor;
+        padding-inline: 3rem;
+
+    }
+    &__header {
+        position: absolute;
+        display: flex;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 1.2rem 3rem;
+        justify-content: space-between;
+        background-color: v.$headerColor;
+    }
+    &__contentLogo{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+    &__logo {
+        background-color: v.$colorPrimary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 5.5rem;
+        height: 5.5rem;
+    }
+    &__img {
+        width: 3rem;
+    }
+    &__hamburger {
+        border-radius: 50%;
+        background-color: v.$colorPrimary;
+        margin-right: -1rem;
+        width: 5.5rem;
+        height: 5.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+    }
+
+    .sidebar__about {
+        background-color: none;
+        margin-bottom: 3rem;
+    }
+    .sidebar__about-heading {
+        font-size: 2.3rem;
+        // font-weight: 500;
+        text-transform: uppercase;
+    }
+}

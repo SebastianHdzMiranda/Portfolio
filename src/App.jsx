@@ -18,8 +18,14 @@ import realState from './assets/portafolio/real-state.png';
 import Cursor from './components/Cursor';
 import Newslatter from './components/Newslatter';
 import Footer from './components/Footer';
+import Sidebar from './components/Sidebar';
+import { useState } from 'react';
+import FilterAside from './components/FilterAside';
 
 function App() {
+
+  const [sidebar, setSidebar] = useState(false);
+  const [animarSidebar, setAnimarSidebar] = useState(false);
   
   const educacionSeccion = [
     {date: '2014- 2018', title: 'WordPress and End Developer'},
@@ -45,10 +51,47 @@ function App() {
     {img: controlGastos, linkGitHub: 'https://github.com/SebastianHdzMiranda/Control-de-Gastos', linkDemo: 'https://control-de-gastos-lac.vercel.app/', titulo: 'Control De Gastos'},
   ];
 
+  function mostrarNav(e) {
+    e.preventDefault();
+    // variables
+    const nav = document.querySelector('.navegacion');
+    const menu  = document.querySelector('#menu');
+    const body = document.querySelector('body');
+
+    // condiciones
+    if (nav.classList.contains('navegacion--activo') || sidebar) {
+        if (window.innerWidth > 992) {
+          setAnimarSidebar(false);
+          
+          setTimeout(() => {
+            setSidebar(false);
+          }, 400);
+        } else {
+          nav.classList.remove('navegacion--activo');
+        }
+        menu.classList.remove('is-active');
+        body.style.overflowY = 'auto';
+    } else{
+        if (window.innerWidth > 992) {
+          setSidebar(true);
+
+          setTimeout(() => {
+            setAnimarSidebar(true);
+          }, 100);
+        } else {
+          nav.classList.add('navegacion--activo');
+        }
+        menu.classList.add('is-active');
+        body.style.overflowY = 'hidden';
+    }
+  }
+
   return (
 
     <>
-      <Header />
+      <Header mostrarNav={mostrarNav}/>
+      {sidebar && <FilterAside animarSidebar={animarSidebar} mostrarNav={mostrarNav}/>}
+      {sidebar && <Sidebar mostrarNav={mostrarNav} animarSidebar={animarSidebar}/>}
       <Cursor />
       <Hero />
       <Servicios />

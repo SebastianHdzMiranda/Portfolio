@@ -42,7 +42,7 @@
   }
   @media (min-width: 1024px) {
     .hamburger-box {
-      width: 4rem;
+      width: 2rem;
     }
   }
   
@@ -58,7 +58,14 @@
       position: absolute;
       transition-property: transform;
       transition-duration: 0.15s;
-      transition-timing-function: ease; }
+      transition-timing-function: ease; 
+    }
+    @media (min-width: 1024px) {
+      .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+        width: 2rem;
+        height: 3px;
+      } 
+    }
     .hamburger-inner::before, .hamburger-inner::after {
       content: "";
       display: block; }

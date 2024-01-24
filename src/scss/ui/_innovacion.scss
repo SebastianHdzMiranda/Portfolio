@@ -73,6 +73,7 @@
     &__heading {
         font-weight: 400;
         font-size: 3rem;
+        text-transform: uppercase;
         margin: 0;
         @include m.tablet {
             font-size: 4.5rem;
@@ -85,7 +86,7 @@
         display: block;
         width: 100%;
         margin-bottom: 3rem;
-        padding: 2.5rem;
+        padding: 2.8rem;
         color: v.$blanco;
         background-color: v.$bgColor;
         border: 1px solid v.$colorPrimary;
@@ -100,7 +101,7 @@
         display: block;
         width: 100%;
         resize: none;
-        padding: 2.5rem;
+        padding: 2.8rem;
         background-color: transparent;
         border: 1px solid v.$colorPrimary;
         height: 20rem;
@@ -108,7 +109,7 @@
         &:focus {
             outline: none;
         }
-        margin-bottom: 4rem;
+        margin-bottom: 3.5rem;
         &::placeholder {
             color: v.$bodyColor;
         }
@@ -120,3 +121,12 @@
     }
 }
 
+.formulario-sidebar {
+    padding-inline: 0;
+
+    &__heading {
+        font-size: 2.3rem;
+        font-weight: 500;
+        margin-bottom: 3rem;
+    }
+}
