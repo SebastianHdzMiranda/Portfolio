@@ -12,8 +12,8 @@ import './scss/app.scss';
 import cafeteria from './assets/portafolio/cafeteria.png';
 import controlGastos from './assets/portafolio/control-gastos.png';
 import guitarLA from './assets/portafolio/guitarLA.png';
-import nailsSite from './assets/portafolio/nails-site.png';
-import nucleus from './assets/portafolio/nucleus.png';
+import crm from './assets/portafolio/crm.png';
+import criptomonedas from './assets/portafolio/cotizador-criptos.png';
 import realState from './assets/portafolio/real-state.png';
 import Cursor from './components/Cursor';
 import Newslatter from './components/Newslatter';
@@ -28,10 +28,10 @@ function App() {
   const [animarSidebar, setAnimarSidebar] = useState(false);
   
   const educacionSeccion = [
-    {date: '2014- 2018', title: 'WordPress and End Developer'},
-    {date: '2012 - 2014', title: 'Python Developer'},
-    {date: '2005 - 2009', title: 'Kent State University'},
-    {date: '2009 - 2012', title: 'User Experience Design'},
+    {date: '2022 - Act', title: 'Instituto Politecnico Nacional (ESIME Culhuacán)', text: 'Carrera en curso como Ingeniero en Computación. adquiriendo una sólida base en ciencias de la computación y tecnologías de la información.'},
+    {date: '2022 - 2023', title: 'Oracle Next-Education', text: 'Programa de Especialización en Frontend de Oracle Next Education. Este curso proporcionó una comprensión profunda de las tecnologías y prácticas más actuales en el desarrollo front-end'},
+    {date: '2005 - 2009', title: 'JavaScript Completo', text: 'Guía completa de JavaScript. Exploración a todas las facetas de este lenguaje de programación fundamental para el desarrollo web, desde los conceptos básicos hasta las técnicas más avanzadas.'},
+    {date: '2009 - 2012', title: 'React y TypeScript - Guía Completa', text: 'Curso especializado que abarcó React y TypeScript, dos tecnologías fundamentales en el desarrollo frontend moderno. Durante el curso, se exploraron conceptos clave y creacion de proyectos reales.'},
   ]
   const skills = [
     {nombre:'HTML', porcentaje: '80%'},
@@ -43,12 +43,12 @@ function App() {
   ];
 
   const proyectos = [
-    {img: cafeteria, linkGitHub: 'https://github.com/SebastianHdzMiranda/La-Cafeteria', linkDemo: 'https://sebastianhdzmiranda.github.io/La-Cafeteria/', titulo: 'La Cafeteria'},
-    {img: nucleus, linkGitHub: 'https://github.com/SebastianHdzMiranda/nucleus-eWallet', linkDemo: 'https://sebastianhdzmiranda.github.io/nucleus-eWallet/', titulo: 'Nucleus'},
-    {img: realState, linkGitHub: 'https://github.com/SebastianHdzMiranda/RealState', linkDemo: 'https://sebastianhdzmiranda.github.io/RealState/', titulo: 'Real State'},
-    {img: guitarLA, linkGitHub: 'https://github.com/SebastianHdzMiranda/GuitarLA', linkDemo: 'https://sebastianhdzmiranda.github.io/GuitarLA/', titulo: 'Guitar LA'},
-    {img: nailsSite, linkGitHub: 'https://github.com/SebastianHdzMiranda/CarolinaSpa', linkDemo: 'https://sebastianhdzmiranda.github.io/CarolinaSpa/', titulo: 'Nails Site'},
-    {img: controlGastos, linkGitHub: 'https://github.com/SebastianHdzMiranda/Control-de-Gastos', linkDemo: 'https://control-de-gastos-lac.vercel.app/', titulo: 'Control De Gastos'},
+    {img: cafeteria, linkGitHub: 'https://github.com/SebastianHdzMiranda/La-Cafeteria', linkDemo: 'https://sebastianhdzmiranda.github.io/La-Cafeteria/', titulo: 'La Cafeteria', tags: ['Sass', 'HTML', 'Gulp', 'Css-Grid', 'JavaScript']},
+    {img: criptomonedas, linkGitHub: 'https://github.com/SebastianHdzMiranda/cotizadorCriptos-react', linkDemo: 'https://cotizador-criptos-react-ebon.vercel.app/', titulo: 'Cotizador-Criptomonedas', tags: ['React', 'Styled-Components', 'APis', 'CRUD']},
+    {img: realState, linkGitHub: 'https://github.com/SebastianHdzMiranda/RealState', linkDemo: 'https://sebastianhdzmiranda.github.io/RealState/', titulo: 'Real State', tags: ['Sass', 'HTML', 'JavaScript', 'FlexBox']},
+    {img: guitarLA, linkGitHub: 'https://github.com/SebastianHdzMiranda/guitarla-react', linkDemo: 'https://guitarla-react-beta.vercel.app/', titulo: 'Guitar LA', tags: ['React', 'Vite', 'Bootstrap']},
+    {img: crm, linkGitHub: 'https://github.com/SebastianHdzMiranda/CRMIndexDB', linkDemo: 'https://sebastianhdzmiranda.github.io/CRMIndexDB/nuevo-cliente.html', titulo: 'CRM - Clientes', tags: ['JavaScript', 'TailWindCSS', 'HTML', 'IndexDB']},
+    {img: controlGastos, linkGitHub: 'https://github.com/SebastianHdzMiranda/Control-de-Gastos', linkDemo: 'https://control-de-gastos-lac.vercel.app/', titulo: 'Control De Gastos', tags: ['React', 'CSS', 'Swipeable-list']},
   ];
 
   function mostrarNav(e) {
@@ -119,7 +119,7 @@ function App() {
       <Proyectos proyectos={proyectos}/>
       <Testimoniales />
       <Innovacion />
-      <Newslatter />
+      {/* <Newslatter /> */}
       <Footer />
     </>
   )

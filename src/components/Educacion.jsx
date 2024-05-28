@@ -32,8 +32,8 @@ function Educacion({educacionSeccion, skills}) {
     <section className='educacion'>
         <div className="educacion__contenido contenedor">
             <Animacion>
-                <h5 className="educacion__h5">Education & skill</h5>
-                <h2 className="educacion__heading">Showcasing your talent amplifying your impact</h2>
+                <h5 className="educacion__h5">Educacion & Skills</h5>
+                <h2 className="educacion__heading">Forjando un camino hacia el éxito.</h2>
             </Animacion>
 
                 <div className="educacion__grid">
@@ -43,7 +43,7 @@ function Educacion({educacionSeccion, skills}) {
                             <div className="educacion__seccion" key={i}>
                                 <span className="educacion__date">{seccion.date}</span>
                                 <h3 className="educacion__seccion-heading">{seccion.title}</h3>
-                                <p className="educacion__text">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed thisnquia consequuntur magni dolores eos qui ratione voluptatem</p>
+                                <p className="educacion__text">{seccion.text}</p>
                             </div>
                         </Animacion>    
                     )}

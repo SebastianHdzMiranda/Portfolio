@@ -8,13 +8,13 @@ function About() {
     <section className='about contenedor' id='about'>
         <div className="about__contenido">
             <Animacion>
-              <h5 className="about__h5">About Me</h5>
+              <h5 className="about__h5">Acerca de Mí</h5>
             </Animacion>
             <Animacion>
-              <h2 className="about__heading">Transforming visions into exceptional portfolios</h2>
+              <h2 className="about__heading">Hecha un vistazo a quién soy y qué hago.</h2>
             </Animacion>
             <div className="about__info">
-              <p className="about__texto">Nemo design enim ipsam voluptatem quim voluptas sit aspernatur aut odit auting fugit sed thisnquia consequuntur magni dolores eos designer heresm qui ratione</p>
+              <p className="about__texto">¡Hola! Te invito a conocerme mejor a través de mi CV. Descubre mi pasión por el desarrollo web y cómo puedo ser parte de tu equipo.</p>
               <a href="./cv.pdf" download='SebastianHernandezCV.pdf' className="about__enlace">Descargar CV</a>
             </div>
         </div>

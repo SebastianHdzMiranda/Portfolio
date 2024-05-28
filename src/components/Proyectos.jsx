@@ -7,8 +7,8 @@ function Proyectos({proyectos}) {
   return (
     <section className='proyectos contenedor' id='proyectos'>
         <Animacion>
-            <h5 className="proyectos__h5">Mi Portafolio</h5>
-            <h2 className="proyectos__heading">Elevate your brand to new heights with our portfolio expertise</h2>
+            <h5 className="proyectos__h5">Mis Proyectos</h5>
+            <h2 className="proyectos__heading">Descubre mis creaciones y conoce mi experiencia de desarrollo.</h2>
         </Animacion>
 
         <div className="proyectos__grid">
@@ -21,10 +21,9 @@ function Proyectos({proyectos}) {
                         <div className="proyecto__contenido">
                             <h3 className="proyecto__heading">{proyecto.titulo}</h3>
                             <div className="proyecto__tags">
-                                <p className="proyecto__tag">JavaScript</p>
-                                <p className="proyecto__tag">React</p>
-                                <p className="proyecto__tag">Sass</p>
-                                <p className="proyecto__tag">Styled Components</p>
+                                {proyecto.tags.map( (tag,i)=>  
+                                    <p className="proyecto__tag" key={i}>{tag}</p>
+                                )}
                             </div>
                             <div className="proyecto__links">
                                 <a href={proyecto.linkGitHub} target="_blank" className="experiencia__vinculo">
