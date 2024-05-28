@@ -86,7 +86,7 @@ function Innovacion() {
             <div className="innovacion__contenido">
                 <Animacion>
                     <h2 className="innovacion__heading">
-                        <span className='innovacion__heading-span'>Diseño</span> E Inovación
+                        <span className='innovacion__heading-span'>Diseño</span> E Innovación
                     </h2>
                 </Animacion>
                 <p className="innovacion__texto">Comprometido con la excelencia en cada proyecto y un enfoque dedicado en la satisfacción del cliente, he logrado cumplir y superar las expectativas. Cada proyecto es una oportunidad para innovar y ofrecer soluciones personalizadas. La atención al detalle y la comunicación constante aseguran resultados que destacan y generan valor.</p>

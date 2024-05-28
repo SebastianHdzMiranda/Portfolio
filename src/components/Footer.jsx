@@ -30,7 +30,7 @@ function Footer() {
                         </div>
 
                         <div className="footer__contacto-info">
-                            <h3 className="footer__contacto-heading">Telefóno</h3>
+                            <h3 className="footer__contacto-heading">Teléfono</h3>
                             <a href='tel:5584956420' className='footer__contacto-texto'>(55) 84956420</a>
                             <a href='tel:5521564946' className='footer__contacto-texto'>(55) 21564946</a>
                         </div>

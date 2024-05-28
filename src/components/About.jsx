@@ -1,6 +1,5 @@
 import React from 'react'
-import aboutImg from '../assets/about_img.jpg';
-import aboutImg2 from '../assets/pic.jpg';
+import aboutImg2 from '../assets/pic2.webp';
 import Animacion from './Animacion';
 
 function About() {
@@ -8,7 +7,7 @@ function About() {
     <section className='about contenedor' id='about'>
         <div className="about__contenido">
             <Animacion>
-              <h5 className="about__h5">Acerca de Mí</h5>
+              <h5 className="about__h5">Acerca de Mi</h5>
             </Animacion>
             <Animacion>
               <h2 className="about__heading">Hecha un vistazo a quién soy y qué hago.</h2>

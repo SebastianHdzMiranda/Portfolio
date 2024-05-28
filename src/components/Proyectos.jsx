@@ -1,8 +1,9 @@
 import React from 'react'
-import cafeteria from '../assets/portafolio/cafeteria.png';
 import Animacion from './Animacion';
 
 function Proyectos({proyectos}) {
+
+    const imageFormats = ['avif', 'webp', 'jpg'];
 
   return (
     <section className='proyectos contenedor' id='proyectos'>
@@ -15,7 +16,12 @@ function Proyectos({proyectos}) {
 
             {proyectos.map( (proyecto, i) => 
                 <div className="proyecto" key={i}>
-                    <img className='proyecto__img' src={proyecto.img} alt="imagen proyecto" />
+                    <picture>
+                        {imageFormats.map((format, i) => (
+                            <source key={i} srcSet={`./portafolio/${proyecto.img}.${format}`} type={`image/${format}`} />
+                        ))} 
+                        <img className='proyecto__img' src={`./portafolio/${proyecto.img}.png`} alt={`Imagen de ${proyecto.img}`} />
+                    </picture>
 
                     <div className="proyecto__info">
                         <div className="proyecto__contenido">

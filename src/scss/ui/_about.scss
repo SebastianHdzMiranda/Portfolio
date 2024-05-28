@@ -4,7 +4,7 @@
 .about {
     padding-top: 8rem;
     display: flex;
-    gap: 5rem;
+    gap: 9rem;
     flex-direction: column;
     @include m.desktop {
         flex-direction: row;
@@ -92,6 +92,8 @@
     .about__img {
         z-index: -1;
         position: relative;
+        // min-width: 50rem;
+        max-height: 55rem;
     }
 
 }

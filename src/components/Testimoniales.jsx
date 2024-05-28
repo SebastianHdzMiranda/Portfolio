@@ -20,7 +20,7 @@ function Testimoniales() {
 
     const testimonios = [
         {img : person1, nombre: 'Rodrigo', area: 'Ingeniero', comentario: 'Excelente colaboración y experiencia en desarrollo web. Ahora el sitio es más responsivo y fácil de usar. ¡Altamente recomendado!'},
-        {img : person1, nombre: 'Jorge', area: 'Fotografo Profesional', comentario: 'Excelente servicio y atención al detalle. Mi aplicacion web luce genial y ahora refleja perfectamente mi trabajo.'},
+        {img : person1, nombre: 'Jorge', area: 'Fotografo Profesional', comentario: 'Excelente servicio y atención al detalle. Mi aplicación web luce genial y ahora refleja perfectamente mi trabajo.'},
         {img : person1, nombre: 'Luz', area: 'Empresaria', comentario: 'Servicio excepcional y resultados impresionantes. Mi sitio web es moderno y fácil de navegar, ¡Gracias por todo!'},
         {img : person1, nombre: 'Juan', area: 'Empresario', comentario: 'Trabajo personalizado y atento a mis necesidades. Mi sitio web quedó exactamente como lo imaginé. ¡Muy satisfecho con el resultado!'},
     ];
