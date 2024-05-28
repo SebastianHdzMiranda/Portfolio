@@ -71,7 +71,7 @@ function Formulario() {
 
     const validarNumero = ()=> {
         if(isNaN(telefono) || telefono < 1 || telefono.length !== 10) {
-            setAlertaNumero('*Digita un numero valido');
+            setAlertaNumero('*Digita un numero valido de 10 digitos');
             return;
         }
         setAlertaNumero('');
