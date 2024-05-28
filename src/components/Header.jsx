@@ -3,7 +3,7 @@ import logo from '../assets/logo2.svg'
 import hamburguer from '../assets/menu.svg';
 // import { mostrarNav } from '../helpers/nav';
 
-function Header({mostrarNav}) {
+function Header({mostrarNav, ocultarMenu}) {
 
   return (
     <header className='header contenedor'>
@@ -17,22 +17,22 @@ function Header({mostrarNav}) {
             </div>
           </div>
 
-          <nav className='navegacion'>
+          <nav className='navegacion' onClick={ocultarMenu}>
             <ul className='navegacion__list'>
               <i className='navegacion__item'>
-                <a href="#" className="navegacion__enlace">Home</a>
+                <a href="#servicios" className="navegacion__enlace">Service</a>
               </i>
               <i className='navegacion__item'>
-                <a href="#" className="navegacion__enlace">About</a>
+                <a href="#about" className="navegacion__enlace">About</a>
               </i>
               <i className='navegacion__item'>
-                <a href="#" className="navegacion__enlace">Service</a>
+                <a href="#skills" className="navegacion__enlace">Skills</a>
               </i>
               <i className='navegacion__item'>
-                <a href="#" className="navegacion__enlace">Project</a>
+                <a href="#proyectos" className="navegacion__enlace">Project</a>
               </i>
               <i className='navegacion__item'>
-                <a href="#" className="navegacion__enlace">Contact</a>
+                <a href="#contacto" className="navegacion__enlace">Contact</a>
               </i>
             </ul>
           </nav>

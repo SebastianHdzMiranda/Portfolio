@@ -41,7 +41,7 @@
 }
 
 .skills {
-    margin-top: 7rem;
+    padding-top: 13rem;
     @include m.grid(1, 5rem);
 
     @include m.desktop {

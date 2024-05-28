@@ -86,10 +86,29 @@ function App() {
     }
   }
 
+  
+  function ocultarMenu(e) {
+    const nav = document.querySelector('.navegacion');
+    const menu  = document.querySelector('#menu');
+    const body = document.querySelector('body');
+
+    const enlace = e.target;
+    if (enlace.classList.contains('navegacion__enlace')) {
+        
+        if (nav.classList.contains('navegacion--activo')) {
+            nav.classList.remove('navegacion--activo');
+            menu.classList.remove('is-active');
+            body.style.overflowY = 'auto';
+            
+        } 
+    }
+  }
+
+
   return (
 
     <>
-      <Header mostrarNav={mostrarNav}/>
+      <Header mostrarNav={mostrarNav} ocultarMenu={ocultarMenu}/>
       {sidebar && <FilterAside animarSidebar={animarSidebar} mostrarNav={mostrarNav}/>}
       {sidebar && <Sidebar mostrarNav={mostrarNav} animarSidebar={animarSidebar}/>}
       <Cursor />

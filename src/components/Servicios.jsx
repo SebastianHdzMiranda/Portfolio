@@ -4,7 +4,7 @@ import Animacion from './Animacion';
 
 function servicios() {
   return (
-    <section className='servicios contenedor'>
+    <section className='servicios contenedor' id='servicios'>
       <Animacion>
         <h5 className="servicios__h5">Mis Servicios</h5>
       </Animacion>

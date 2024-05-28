@@ -5,7 +5,7 @@ import Animacion from './Animacion';
 function Proyectos({proyectos}) {
 
   return (
-    <section className='proyectos contenedor'>
+    <section className='proyectos contenedor' id='proyectos'>
         <Animacion>
             <h5 className="proyectos__h5">Mi Portafolio</h5>
             <h2 className="proyectos__heading">Elevate your brand to new heights with our portfolio expertise</h2>

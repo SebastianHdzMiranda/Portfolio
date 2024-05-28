@@ -49,7 +49,7 @@ function Educacion({educacionSeccion, skills}) {
                     )}
                 </div>
 
-            <div className="skills" ref={miRef}>
+            <div className="skills" ref={miRef} id='skills'>
 
                 {skills.map( (skill, i) => 
                     <div className="skill" key={i}>

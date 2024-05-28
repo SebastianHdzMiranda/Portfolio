@@ -3,7 +3,7 @@ import Animacion from './Animacion';
 
 function Innovacion() {
   return (
-    <section className='innovacion contenedor'>
+    <section className='innovacion contenedor' id='contacto'>
         <div className="innovacion__contenido">
             <Animacion>
                 <h2 className="innovacion__heading">

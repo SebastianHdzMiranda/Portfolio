@@ -1,10 +1,11 @@
 import React from 'react'
 import aboutImg from '../assets/about_img.jpg';
+import aboutImg2 from '../assets/pic.jpg';
 import Animacion from './Animacion';
 
 function About() {
   return (
-    <section className='about contenedor'>
+    <section className='about contenedor' id='about'>
         <div className="about__contenido">
             <Animacion>
               <h5 className="about__h5">About Me</h5>
@@ -20,7 +21,9 @@ function About() {
 
         <Animacion position={'x'}>
           <div className="about__grafico">
-              <img src={aboutImg} alt="about_imagen" />
+              <div className="about__grafico-content">
+                <img className='about__img' src={aboutImg2} alt="about_imagen" />
+              </div>
           </div>
         </Animacion>
     </section>

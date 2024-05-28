@@ -66,6 +66,7 @@
         transition: all .2s ease;
         max-width: 42rem;
         margin: 0 auto;
+
         &::after {
             content: '';
             position: absolute;
@@ -81,6 +82,16 @@
             transform: scale(1.05) rotate(5deg);
 
         }
+
+    }
+    .about__grafico-content {
+        position: relative;
+        background-color: transparentize(v.$bgBody, .8);
+    }
+
+    .about__img {
+        z-index: -1;
+        position: relative;
     }
 
 }
