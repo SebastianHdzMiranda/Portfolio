@@ -8,8 +8,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
-// import 'swiper/css/pagination';
-// import 'swiper/css/navigation';
 
 
 // import required modules
@@ -19,6 +17,13 @@ import { Autoplay } from 'swiper/modules';
 function Testimoniales() {
 
     const [isMobile, setIsMobile] = useState(1);
+
+    const testimonios = [
+        {img : person1, nombre: 'Rodrigo', area: 'Ingeniero', comentario: 'Excelente colaboración y experiencia en desarrollo web. Ahora el sitio es más responsivo y fácil de usar. ¡Altamente recomendado!'},
+        {img : person1, nombre: 'Jorge', area: 'Fotografo Profesional', comentario: 'Excelente servicio y atención al detalle. Mi aplicacion web luce genial y ahora refleja perfectamente mi trabajo.'},
+        {img : person1, nombre: 'Luz', area: 'Empresaria', comentario: 'Servicio excepcional y resultados impresionantes. Mi sitio web es moderno y fácil de navegar, ¡Gracias por todo!'},
+        {img : person1, nombre: 'Juan', area: 'Empresario', comentario: 'Trabajo personalizado y atento a mis necesidades. Mi sitio web quedó exactamente como lo imaginé. ¡Muy satisfecho con el resultado!'},
+    ];
 
     useEffect(() => {   
         ajustarSlidesPerView();
@@ -66,90 +71,29 @@ function Testimoniales() {
                 slidesPerView={isMobile} 
             >
                 {/* usar .map */}
-                <SwiperSlide className='testimoniales__slide'>
-                    <div className="testimonial">
-                        <div className="testimonial__img-container">
-                            <img src={person1} alt="Person1" className="testimonial__img" />
-                        </div>
+                {testimonios.map( testimonio=> 
+                    <SwiperSlide className='testimoniales__slide'>
+                        <div className="testimonial">
+                            {/* <div className="testimonial__img-container">
+                                <img src={testimonio.img} alt={`Foto${testimonio.nombre}`} className="testimonial__img" />
+                            </div> */}
 
-                        <div className="testimonial__puntuacion">
-                            <img className='testimonial__star' src={star} alt="Star" />
-                            <img className='testimonial__star' src={star} alt="Star" />
-                            <img className='testimonial__star' src={star} alt="Star" />
-                            <img className='testimonial__star' src={star} alt="Star" />
-                            <img className='testimonial__star' src={star} alt="Star" />
-                        </div>
+                            <div className="testimonial__puntuacion">
+                                <img className='testimonial__star' src={star} alt="Star" />
+                                <img className='testimonial__star' src={star} alt="Star" />
+                                <img className='testimonial__star' src={star} alt="Star" />
+                                <img className='testimonial__star' src={star} alt="Star" />
+                                <img className='testimonial__star' src={star} alt="Star" />
+                            </div>
 
-                        <h3 className="testimonial__nombre">Sebastian</h3>
-                        <p className="testimonial__area">Content Manager</p>
-                        <p className="testimonial__comentario">
-                            Beautiful minimalist design and great, fast response with support. Highly recommend. Thanks Marketify!                                        
-                        </p>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide className='testimoniales__slide'>
-                    <div className="testimonial">
-                        <div className="testimonial__img-container">
-                            <img src={person1} alt="Person1" className="testimonial__img" />
+                            <h3 className="testimonial__nombre">{testimonio.nombre}</h3>
+                            <p className="testimonial__area">{testimonio.area}</p>
+                            <p className="testimonial__comentario">
+                                {testimonio.comentario}                                    
+                            </p>
                         </div>
-
-                        <div className="testimonial__puntuacion">
-                            <img className='testimonial__star' src={star} alt="Star" />
-                            <img className='testimonial__star' src={star} alt="Star" />
-                            <img className='testimonial__star' src={star} alt="Star" />
-                            <img className='testimonial__star' src={star} alt="Star" />
-                            <img className='testimonial__star' src={star} alt="Star" />
-                        </div>
-
-                        <h3 className="testimonial__nombre">Armin Van Buuren</h3>
-                        <p className="testimonial__area">Content Manager</p>
-                        <p className="testimonial__comentario">
-                            Beautiful minimalist design and great, fast response with support. Highly recommend. Thanks Marketify!                                        
-                        </p>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide className='testimoniales__slide'>
-                    <div className="testimonial">
-                        <div className="testimonial__img-container">
-                            <img src={person1} alt="Person1" className="testimonial__img" />
-                        </div>
-
-                        <div className="testimonial__puntuacion">
-                            <img className='testimonial__star' src={star} alt="Star" />
-                            <img className='testimonial__star' src={star} alt="Star" />
-                            <img className='testimonial__star' src={star} alt="Star" />
-                            <img className='testimonial__star' src={star} alt="Star" />
-                            <img className='testimonial__star' src={star} alt="Star" />
-                        </div>
-
-                        <h3 className="testimonial__nombre">Sebastian</h3>
-                        <p className="testimonial__area">Content Manager</p>
-                        <p className="testimonial__comentario">
-                            Beautiful minimalist design and great, fast response with support. Highly recommend. Thanks Marketify!                                        
-                        </p>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide className='testimoniales__slide'>
-                    <div className="testimonial">
-                        <div className="testimonial__img-container">
-                            <img src={person1} alt="Person1" className="testimonial__img" />
-                        </div>
-
-                        <div className="testimonial__puntuacion">
-                            <img className='testimonial__star' src={star} alt="Star" />
-                            <img className='testimonial__star' src={star} alt="Star" />
-                            <img className='testimonial__star' src={star} alt="Star" />
-                            <img className='testimonial__star' src={star} alt="Star" />
-                            <img className='testimonial__star' src={star} alt="Star" />
-                        </div>
-
-                        <h3 className="testimonial__nombre">Armin Van Buuren</h3>
-                        <p className="testimonial__area">Content Manager</p>
-                        <p className="testimonial__comentario">
-                            Beautiful minimalist design and great, fast response with support. Highly recommend. Thanks Marketify!                                        
-                        </p>
-                    </div>
-                </SwiperSlide>
+                    </SwiperSlide>
+                )}
             </Swiper>
         </div>
 

@@ -31,6 +31,14 @@
     padding: 4rem 3rem 2rem 3rem;
     position: relative;
     // margin: 0 1rem;
+    height: 25rem;
+
+    @include m.tablet {
+        height: 35rem;
+    }
+    @include m.desktop {
+        height: 23rem;
+    }
     &__img-container {
         position: absolute;
         top: -4rem;

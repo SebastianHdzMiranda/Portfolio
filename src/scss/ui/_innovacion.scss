@@ -7,7 +7,7 @@
         padding-top: 13rem;
     }
     @include m.desktop {
-        @include m.grid(2, 3rem);
+        @include m.grid(2, 2rem);
     }
     &__contenido {
         margin-bottom: 2rem;

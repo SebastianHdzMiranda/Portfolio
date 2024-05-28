@@ -10,7 +10,7 @@ function Innovacion() {
                     <span className='innovacion__heading-span'>Diseño</span> E Inovación
                 </h2>
             </Animacion>
-            <p className="innovacion__texto">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit auting fugit sed thisnquia consequuntur magni dolores eos designer heresm qui ratione voluptatem sequi nesciuNeque porro quisquam est, oursqui dolorem ipsum quia dolor sit amet consectetur, adipisci velit, sed quia non numquam</p>
+            <p className="innovacion__texto">Comprometido con la excelencia en cada proyecto y un enfoque dedicado en la satisfacción del cliente, he logrado cumplir y superar las expectativas. Cada proyecto es una oportunidad para innovar y ofrecer soluciones personalizadas. La atención al detalle y la comunicación constante aseguran resultados que destacan y generan valor.</p>
 
             <div className="innovacion__estadistics">
                 <div className="innovacion__estadistic">
@@ -37,7 +37,7 @@ function Innovacion() {
             <Animacion>
                 <h2 className="formulario__heading">Quieres Contactarme?</h2>
             </Animacion>
-            <p className="formulario__texto">For your car we will do everything advice design in us repairs and maintenance We are the some preferred.</p>
+            <p className="formulario__texto">¡No dudes en contactarme para discutir tus necesidades! Estoy aquí para ayudar y colaborar en tu próximo proyecto.</p>
 
             <form>
                 <input className='formulario__input' type="text" placeholder='Tu nombre' />

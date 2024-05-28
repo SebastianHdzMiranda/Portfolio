@@ -40,23 +40,28 @@
         display: inline-block;
         border-radius: 50%;
         padding: 2rem;
-        min-height: 6rem;
-        min-width: 6rem;
+        height: 9rem;
+        width: 9rem;
+        min-width: 9rem;
         margin-bottom: 1rem;
+
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-inline: auto;
+
         @include m.tablet {
             margin-bottom: 0;
             display: flex;
             justify-content: center;
-        }
-        @include m.desktop {
-            min-height: 10rem;
-            min-width: 10rem; 
+            margin-inline: 0;
         }
     }
     &__contacto-img {
         width: 3.5rem;
+        width: 5rem;
         @include m.desktop {
-            width: 4rem;
         }
     }
     &__contacto-heading {
@@ -67,6 +72,13 @@
         font-weight: 400;
         width: 80%;
         margin: 0 auto;
+        display: block;
+        color: v.$bodyColor;
+        line-height: 1.7;
+        font-size: 1.6rem;
+        font-weight: normal;
+        letter-spacing: normal;
+
         @include m.tablet {
             margin: 0;
             width: 100%;

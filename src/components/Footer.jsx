@@ -1,5 +1,8 @@
 import React from 'react'
 import Animacion from './Animacion'
+import location from '../assets/location.svg';
+import email from '../assets/email.svg';
+import phone from '../assets/phone.svg';
 
 function Footer() {
   return (
@@ -10,7 +13,7 @@ function Footer() {
                 <Animacion position={'x'}> 
                     <div className="footer__contacto">
                         <div className="footer__contacto-imgContent">
-                            <img src='https://wp.shsarker.xyz/zyan/wp-content/themes/zyan/assets/svg/map.svg' alt="Img map" className="footer__contacto-img" />
+                            <img src={location} alt="Img map" className="footer__contacto-img" />
                         </div>
 
                         <div className="footer__contacto-info">
@@ -23,12 +26,13 @@ function Footer() {
                 <Animacion position={'x'}> 
                     <div className="footer__contacto">
                         <div className="footer__contacto-imgContent">
-                            <img src='https://wp.shsarker.xyz/zyan/wp-content/themes/zyan/assets/svg/phone.svg' alt="img phone" className="footer__contacto-img" />
+                            <img src={phone} alt="img phone" className="footer__contacto-img" />
                         </div>
 
                         <div className="footer__contacto-info">
-                            <h3 className="footer__contacto-heading">No.Telefonico</h3>
-                            <p className='footer__contacto-texto'>(55) 84956420 <br />(55) 15691051</p>
+                            <h3 className="footer__contacto-heading">Telefóno</h3>
+                            <a href='tel:5584956420' className='footer__contacto-texto'>(55) 84956420</a>
+                            <a href='tel:5521564946' className='footer__contacto-texto'>(55) 21564946</a>
                         </div>
                     </div>
                 </Animacion>
@@ -36,13 +40,13 @@ function Footer() {
                 <Animacion position={'x'}> 
                     <div className="footer__contacto">
                         <div className="footer__contacto-imgContent">
-                            <img src='https://wp.shsarker.xyz/zyan/wp-content/themes/zyan/assets/svg/envelope.svg' alt="img email" className="footer__contacto-img" />
+                            <img src={email} alt="img email" className="footer__contacto-img" />
                         </div>
 
                         <div className="footer__contacto-info">
                             <h3 className="footer__contacto-heading">Contacto</h3>
-                            <p className='footer__contacto-texto'>sebastian.cdmx@outlook.com</p>
-                            <p className='footer__contacto-texto'>sebashm68@gmail.com</p>
+                            <a href='mailto:sebashm68@gmail.com' className='footer__contacto-texto'>sebashm68@gmail.com</a>
+                            <a href='mailto:sebastian.cdmx@outlook.com' className='footer__contacto-texto'>sebastian.cdmx@outlook.com</a>
                         </div>
                     </div>
                 </Animacion>
