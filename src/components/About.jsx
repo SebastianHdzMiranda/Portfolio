@@ -15,7 +15,7 @@ function About() {
             </Animacion>
             <div className="about__info">
               <p className="about__texto">Nemo design enim ipsam voluptatem quim voluptas sit aspernatur aut odit auting fugit sed thisnquia consequuntur magni dolores eos designer heresm qui ratione</p>
-              <a href="#" className="about__enlace">Descargar CV</a>
+              <a href="./cv.pdf" download='SebastianHernandezCV.pdf' className="about__enlace">Descargar CV</a>
             </div>
         </div>
 
