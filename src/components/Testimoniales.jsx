@@ -70,9 +70,8 @@ function Testimoniales() {
                 effect='fade'
                 slidesPerView={isMobile} 
             >
-                {/* usar .map */}
-                {testimonios.map( testimonio=> 
-                    <SwiperSlide className='testimoniales__slide'>
+                {testimonios.map( (testimonio, i) => 
+                    <SwiperSlide key={i} className='testimoniales__slide'>
                         <div className="testimonial">
                             {/* <div className="testimonial__img-container">
                                 <img src={testimonio.img} alt={`Foto${testimonio.nombre}`} className="testimonial__img" />

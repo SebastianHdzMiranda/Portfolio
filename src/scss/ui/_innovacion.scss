@@ -82,10 +82,12 @@
     &__texto {
         margin-block: 3rem;
     }
+    &__campo {
+        margin-bottom: 3rem;
+    }
     &__input {
         display: block;
         width: 100%;
-        margin-bottom: 3rem;
         padding: 2.8rem;
         color: v.$blanco;
         background-color: v.$bgColor;
@@ -95,6 +97,9 @@
         }
         &::placeholder {
             color: v.$bodyColor;
+        }
+        &--alert {
+            border-color: red;
         }
     }
     &__textArea {
@@ -129,4 +134,11 @@
         font-weight: 500;
         margin-bottom: 3rem;
     }
+}
+
+.alerta {
+    font-size: 1.4rem;
+    // font-weight: 700;
+    color: rgb(254, 47, 47);
+    margin-top: .5rem;
 }

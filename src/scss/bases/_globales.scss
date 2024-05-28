@@ -83,3 +83,7 @@ ul {
 .seccion {
     padding: 8rem 0;
 }
+
+div:where(.swal2-container) div:where(.swal2-popup) {
+    font-size: 1.6rem;
+}
