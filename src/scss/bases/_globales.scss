@@ -86,4 +86,6 @@ ul {
 
 div:where(.swal2-container) div:where(.swal2-popup) {
     font-size: 1.6rem !important;
+    background-color: #545454 !important;
+    color: v.$blanco !important;
 }
