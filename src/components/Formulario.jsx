@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Alerta from './Alerta';
 import { enviarDatos } from '../data/enviarDatos'
-import Swal from 'sweetalert2';
-import '@sweetalert2/theme-dark/dark.scss';
+import Swal from 'sweetalert2/dist/sweetalert2.js';
 
 function Formulario() {
     const [nombre, setNombre] = useState('');
