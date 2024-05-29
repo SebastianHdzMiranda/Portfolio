@@ -1,5 +1,5 @@
 import React from 'react'
-import aboutImg2 from '../assets/pic2.webp';
+import aboutImg2 from '../assets/pic2.jpeg';
 import Animacion from './Animacion';
 
 function About() {
