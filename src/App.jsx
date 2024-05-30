@@ -39,7 +39,7 @@ function App() {
     {img: 'cafeteria', linkGitHub: 'https://github.com/SebastianHdzMiranda/La-Cafeteria', linkDemo: 'https://sebastianhdzmiranda.github.io/La-Cafeteria/', titulo: 'La Cafetería', tags: ['Sass', 'HTML', 'Gulp', 'Css-Grid', 'JavaScript']},
     {img: 'cotizador-criptos', linkGitHub: 'https://github.com/SebastianHdzMiranda/cotizadorCriptos-react', linkDemo: 'https://cotizador-criptos-react-ebon.vercel.app/', titulo: 'Cotizador-Criptomonedas', tags: ['React', 'Styled-Components', 'APis', 'CRUD']},
     {img: 'real-state', linkGitHub: 'https://github.com/SebastianHdzMiranda/RealState', linkDemo: 'https://sebastianhdzmiranda.github.io/RealState/', titulo: 'Real State', tags: ['Sass', 'HTML', 'JavaScript', 'FlexBox']},
-    {img: 'guitarLA', linkGitHub: 'https://github.com/SebastianHdzMiranda/guitarla-react', linkDemo: 'https://guitarla-react-beta.vercel.app/', titulo: 'Guitar LA', tags: ['React', 'Vite', 'Bootstrap']},
+    {img: 'guitarLA', linkGitHub: 'https://github.com/SebastianHdzMiranda/guitarla-reactTS', linkDemo: 'https://guitarla-react-ts-three.vercel.app/', titulo: 'Guitar LA', tags: ['React', 'Vite', 'Bootstrap', 'TypeScript']},
     {img: 'crm', linkGitHub: 'https://github.com/SebastianHdzMiranda/CRMIndexDB', linkDemo: 'https://sebastianhdzmiranda.github.io/CRMIndexDB/nuevo-cliente.html', titulo: 'CRM - Clientes', tags: ['JavaScript', 'TailWindCSS', 'HTML', 'IndexDB']},
     {img: 'control-gastos', linkGitHub: 'https://github.com/SebastianHdzMiranda/Control-de-Gastos', linkDemo: 'https://control-de-gastos-lac.vercel.app/', titulo: 'Control De Gastos', tags: ['React', 'CSS', 'Swipeable-list']},
   ];
