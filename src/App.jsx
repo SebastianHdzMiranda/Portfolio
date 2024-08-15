@@ -23,8 +23,8 @@ function App() {
   const educacionSeccion = [
     {date: '2022 - Act', title: 'Instituto Politécnico Nacional (ESIME Culhuacán)', text: 'Carrera en curso como Ingeniero en Computación. adquiriendo una sólida base en ciencias de la computación y tecnologías de la información.'},
     {date: '2022 - 2023', title: 'Oracle Next-Education', text: 'Programa de Especialización en Frontend de Oracle Next Education. Este curso proporcionó una comprensión profunda de las tecnologías y prácticas más actuales en el desarrollo front-end.'},
-    {date: '2005 - 2009', title: 'JavaScript Completo', text: 'Guía completa de JavaScript. Exploración a todas las facetas de este lenguaje de programación fundamental para el desarrollo web, desde los conceptos básicos hasta las técnicas más avanzadas.'},
-    {date: '2009 - 2012', title: 'React y TypeScript - Guía Completa', text: 'Curso especializado que abarcó React y TypeScript, dos tecnologías fundamentales en el desarrollo frontend moderno. Durante el curso, se exploraron conceptos clave y creacion de proyectos reales.'},
+    {date: '2020 - 2022', title: 'JavaScript Completo', text: 'Guía completa de JavaScript. Exploración a todas las facetas de este lenguaje de programación fundamental para el desarrollo web, desde los conceptos básicos hasta las técnicas más avanzadas.'},
+    {date: '2021 - 2023', title: 'React y TypeScript - Guía Completa', text: 'Curso especializado que abarcó React y TypeScript, dos tecnologías fundamentales en el desarrollo frontend moderno. Durante el curso, se exploraron conceptos clave y creacion de proyectos reales.'},
   ]
   const skills = [
     {nombre:'HTML', porcentaje: '95%'},
