@@ -67,6 +67,7 @@
 .formulario {
     background-color: v.$bgColor;
     padding: 2.5rem;
+    scroll-margin-top: 8rem;
     @include m.tablet {
         padding: 5rem;
     }

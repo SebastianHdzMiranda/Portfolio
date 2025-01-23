@@ -1,7 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Animacion from './Animacion';
+import { educacionSeccion, skills } from '../data/data_info';
 
-function Educacion({educacionSeccion, skills}) {
+function Educacion() {
+
+
 
     const [isVisible, setIsVisible] = useState(false);
     const miRef = useRef(null);

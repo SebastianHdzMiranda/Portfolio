@@ -1,9 +1,9 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import logo from '../assets/logo2.svg'
-import hamburguer from '../assets/menu.svg';
+import { menuElements } from '../data/data_info';
 // import { mostrarNav } from '../helpers/nav';
 
-function Header({mostrarNav, ocultarMenu}) {
+function Header({mostrarNav, ocultarMenu, menuActive}) {
 
   return (
     <header className='header contenedor'>
@@ -17,30 +17,20 @@ function Header({mostrarNav, ocultarMenu}) {
             </div>
           </div>
 
-          <nav className='navegacion' onClick={ocultarMenu}>
+          <nav className={`navegacion ${menuActive && 'navegacion--activo'}`} onClick={ocultarMenu}>
             <ul className='navegacion__list'>
-              <i className='navegacion__item'>
-                <a href="#servicios" className="navegacion__enlace">Servicios</a>
-              </i>
-              <i className='navegacion__item'>
-                <a href="#about" className="navegacion__enlace">Conoceme</a>
-              </i>
-              <i className='navegacion__item'>
-                <a href="#skills" className="navegacion__enlace">Skills</a>
-              </i>
-              <i className='navegacion__item'>
-                <a href="#proyectos" className="navegacion__enlace">Proyectos</a>
-              </i>
-              <i className='navegacion__item'>
-                <a href="#contacto" className="navegacion__enlace">Contacto</a>
-              </i>
+              {menuElements.map( element => 
+                <i className='navegacion__item' key={element.title}>
+                  <a href={element.href} className="navegacion__enlace">{element.title}</a>
+                </i>
+              )}
             </ul>
           </nav>
 
           <div className="header__hamburger">
             {/* <img className="header__hamburgerImg" src={hamburguer} alt="" /> */}
 
-            <a className="header__iconMenu hamburger hamburger--slider" type="button" id="menu" onClick={mostrarNav}>
+            <a className={`header__iconMenu hamburger hamburger--slider ${menuActive && 'is-active'}`} type="button" id="menu" onClick={mostrarNav}>
               <span className="hamburger-box">
               <span className="hamburger-inner"></span>
               </span>
