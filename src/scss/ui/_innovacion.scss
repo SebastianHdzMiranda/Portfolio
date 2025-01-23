@@ -124,6 +124,10 @@
         @include m.boton;
         border: none;
         cursor: pointer;
+        width: 100%;
+        @include m.tablet {
+            width: unset;
+        }
     }
 }
 
