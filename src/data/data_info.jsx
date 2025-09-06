@@ -64,4 +64,4 @@ export const menuElements = [
     {href:'#skills', title: 'Skills'},
     {href:'#proyectos', title: 'Proyectos'},
     {href:'#contacto', title: 'Contacto'},
-]
+] 
