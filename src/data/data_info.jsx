@@ -43,7 +43,7 @@ export const skills = [
     {nombre: 'CSS', porcentaje: '90%'}, 
     {nombre: 'JavaScript', porcentaje: '70%'}, 
     {nombre: 'TypeScript', porcentaje: '60%'}, 
-    {nombre:'WordPress', porcentaje: '40%'}, 
+    {nombre:'WordPress', porcentaje: '90%'}, 
 ];
 
 export const proyectos = [
@@ -53,6 +53,8 @@ export const proyectos = [
     {img: 'guitarLA', linkGitHub: 'https://github.com/SebastianHdzMiranda/guitarla-reactTS', linkDemo: 'https://guitarla-react-ts-three.vercel.app/', titulo: 'Guitar LA', tags: ['React', 'Vite', 'Bootstrap', 'TypeScript']},
     {img: 'crm', linkGitHub: 'https://github.com/SebastianHdzMiranda/CRMIndexDB', linkDemo: 'https://sebastianhdzmiranda.github.io/CRMIndexDB/nuevo-cliente.html', titulo: 'CRM - Clientes', tags: ['JavaScript', 'TailWindCSS', 'HTML', 'IndexDB']},
     {img: 'control-gastos', linkGitHub: 'https://github.com/SebastianHdzMiranda/Control-de-Gastos', linkDemo: 'https://control-de-gastos-lac.vercel.app/', titulo: 'Control De Gastos', tags: ['React', 'CSS', 'Swipeable-list']},
+    {img: 'tribalance', linkGitHub: 'https://tribalance.com.mx/', linkDemo: 'https://tribalance.com.mx/', titulo: 'Tribalance', tags: ['Wordpress', 'Elementor']},
+    {img: 'mope-vestuarios', linkGitHub: 'https://www.mopevestuario.com/', linkDemo: 'https://www.mopevestuario.com/', titulo: 'Mope Vestuarios', tags: ['Wordpress', 'Elementor', 'Contact Form']},
 ];
 
 
